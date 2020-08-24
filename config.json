@@ -3,6 +3,6 @@
     "banner": "/images/header.jpg",
     "bannerHeight": 400,
     "components": [
-        {"name": "visNetworkViewer", "src": "components/VisNetwork.vue", "selectors": ["tag:vis-network"], "icon": "fa-chart-network", "label": "Vis Network" }
+        {"name": "visNetwork", "src": "components/VisNetwork.vue", "selectors": ["tag:vis-network"], "icon": "fa-chart-network", "label": "Vis Network" }
     ]
 }
