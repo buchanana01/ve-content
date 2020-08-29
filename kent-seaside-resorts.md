@@ -95,6 +95,11 @@ Margate is a seaside town in Thanet, Kent, South East England, Europe, 15 miles 
        attribution="© The British Library Board .c11802-06 / Maps K.Top.17.4.e Images Online"
        fit="contain">
 
+## Folkestone
+
+As one 19th century wag observed, Folkestone is a near anagram of ‘Kent Fools’, a joke not lost on the unknown author (believed to be from [Dover](/dickens/19c-dover)) of [_The Folkestone Fiery Serpent._](https://books.google.co.uk/books?id=yiotAAAAYAAJ&pg=PP5&lpg=PP5&dq=folkestone+fiery+serpent+first+published&source=bl&ots=FC3-gil3xI&sig=NR_HmDFGyrVpUf5psT-vvLgvK8k&hl=en&sa=X&ved=0CCEQ6AEwAGoVChMI9I2TlPmmxwIVsgjbCh146QCT#v=onepage&q=folkestone%20fiery%20serpent%20first%20published&f=false')  While the townspeople in this comic poem are unable to tell the difference between a dragon and a peacock, their real life counterparts were more astute in their promotion of the town.
+<param ve-image manifest="https://kent-map.github.io/kent/manifests/folkestone.json">
+
 ## Dover
 
 Dover (/ˈdoʊvər/) is a town and major ferry port in Kent, South East England. It faces France across the Strait of Dover, the narrowest part of the English Channel, and lies south-east of Canterbury and east of Maidstone. The town is the administrative centre of the Dover District and home of the Port of Dover. The surrounding chalk cliffs are known as the White Cliffs of Dover.
