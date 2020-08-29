@@ -21,7 +21,7 @@ As the fashionable ‘water cure’ of spas such as Bath and Tunbridge Wells mov
        date="1890"
        description="Beach and ladies' bathing place, Margate, England, between 1890 and 1900"
        attribution="https://commons.wikimedia.org/wiki/File:Beach_and_ladies%27_bathing_place,_Margate,_England-LCCN2002697068.jpg"
-       region="pct:10,5,80,90">
+       fit="cover">
 
 Women of all ages benefited from the greater freedom and healthier lifestyle of the seaside holiday. Princess Victoria spent three months in Broadstairs in 1829 and stayed in Ramsgate in 1835. Another teenage girl, Emily Shore, kept a journal of her visit to Thanet in the summer of 1831. Like Anna Maria Hussey, who holidayed in Dover in 1836, Emily made the trip by steamboat.
 <param ve-image 
