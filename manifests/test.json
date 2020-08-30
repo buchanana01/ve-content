@@ -2,10 +2,9 @@
     "@context": "https://iiif.io/api/presentation/2/context.json",
     "@id": "https://iiif-status.visual-essays.app/manifest/f494f2e4e9b212930a165d31274fc782e4cea553147adc87be103b54b80fbca9",
     "@type": "sc:Manifest",
-    "attribution": "attribution",
+    "attribution": "",
     "label": "test",
-    "license": "license",
-    "thumbnail": "https://free.iiifhosting.com/iiif/6a4964311dbe8df3b9c1eff2ca5a145bf4fd6051167a362ca7ff22b9d6b579ec/full/150,/0/default.jpg",
+    "license": "",
     "metadata": [
         {
             "label": "url",
@@ -20,9 +19,7 @@
                 {
                     "@id": "https://iiif-status.visual-essays.app/canvas/f494f2e4e9b212930a165d31274fc782e4cea553147adc87be103b54b80fbca9",
                     "@type": "sc:Canvas",
-                    "label": "test",
                     "height": 3000,
-                    "width": 3000,
                     "images": [
                         {
                             "@id": "http://some.url.io/id1",
@@ -34,17 +31,20 @@
                                 "@type": "dctypes:Image",
                                 "format": "image/jpeg",
                                 "height": 2736,
-                                "width": 5472,
                                 "service": {
                                     "@context": "http://iiif.io/api/image/2/context.json",
                                     "@id": "https://free.iiifhosting.com/iiif/76495ba4bf7909c10cf6f0e63ad5b24c60e00c3d4299f5f226b71c14e8308cf",
                                     "profile": "https://iiif.io/api/image/2/level2.json"
-                                }
+                                },
+                                "width": 5472
                             }
                         }
-                    ]
+                    ],
+                    "label": "test",
+                    "width": 3000
                 }
             ]
         }
-    ]
+    ],
+    "thumbnail": "https://free.iiifhosting.com/iiif/6a4964311dbe8df3b9c1eff2ca5a145bf4fd6051167a362ca7ff22b9d6b579ec/full/150,/0/default.jpg"
 }
