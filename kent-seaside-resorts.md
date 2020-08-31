@@ -1,7 +1,8 @@
 <param ve-config
        banner="/images/sands-ramgate.jpg"
        title="Kent seaside resorts"
-       layout="vtl">
+       layout="vtl"
+       iiif-service="iiifhosting">
 
 <param title="Broadstairs" eid="Q922739" aliases="broadstairs">
 <param title="Ramsgate" eid="Q736439">
