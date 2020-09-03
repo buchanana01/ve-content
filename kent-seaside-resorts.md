@@ -16,7 +16,7 @@
 
 As the fashionable ‘water cure’ of spas such as Bath and Tunbridge Wells moved coastwards in the late eighteenth and nineteenth centuries, so a number of obscure fishing villages reinvented themselves as seaside resorts. Kent was an obvious beneficiary of this trend, with Gravesend in the Medway area and no fewer than seven resorts along the East coast: while Whitstable and Herne Bay never offered serious competition to the Sussex resorts of Brighton and Eastbourne, visitors were drawn in large numbers to [Broadstairs](#broadstairs), [Ramsgate](#ramsgate) and [Margate](#margate) in Thanet, and to [Folkestone](#folkestone) and [Dover](#19c-dover) in Sheppey. 
 <param ve-map center="51.238943, 1.251498" zoom="10.5" basemap="Esri_NatGeoWorldMap">
-<param ve-image 
+<param ve-image
        url="https://upload.wikimedia.org/wikipedia/commons/8/86/Beach_and_ladies%27_bathing_place%2C_Margate%2C_England-LCCN2002697068.jpg"
        title="Beach and ladies' bathing place, Margate, England"
        date="1890"
