@@ -1,8 +1,5 @@
 {
     "title": "Visual Essays",
     "banner": "/images/header.jpg",
-    "bannerHeight": 400,
-    "components": [
-        {"name": "visNetwork", "src": "components/VisNetwork.vue", "selectors": ["tag:vis-network"], "icon": "fa-chart-network", "label": "Vis Network" }
-    ]
+    "bannerHeight": 400
 }
