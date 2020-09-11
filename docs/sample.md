@@ -17,7 +17,7 @@
 <param title="Washington, D. C." eid="Q61" fill="green" marker-symbol="landmark">
 
 Cherry blossoms have formed an integral part of the identity of Washington, D. C., ever since Japan gifted over three thousand cherry trees to the United States in 1912 as a symbol of friendship and political alliance. Until the final decades of the 19th century, Japanese cherry trees had often been misunderstood among Westerners, and garnered only modest attention in Europe. Subsequent European involvement in East Asia forced Japan, which had pursued a strict isolationist policy for centuries, to open its borders.  As a result, Europeans enjoyed greater contact with Japanese culture, and a growing interest in cherry blossoms. With the planting of Japan’s gift of cherry trees in the <span eid="Q956781">Tidal Basin</span>, cherry blossoms became accessible to the American public, entering Western consciousness on an unprecedented scale.
-<param ve-vis-network file="data/heliconia.tsv">
+<param ve-vis-network file="/data/heliconia.tsv">
 
 Cherry blossoms have formed an integral part of the identity of Washington, D. C., ever since Japan gifted over three thousand cherry trees to the United States in 1912 as a symbol of friendship and political alliance. Until the final decades of the 19th century, Japanese cherry trees had often been misunderstood among Westerners, and garnered only modest attention in Europe. Subsequent European involvement in East Asia forced Japan, which had pursued a strict isolationist policy for centuries, to open its borders.  As a result, Europeans enjoyed greater contact with Japanese culture, and a growing interest in cherry blossoms. With the planting of Japan’s gift of cherry trees in the <span eid="Q956781">Tidal Basin</span>, cherry blossoms became accessible to the American public, entering Western consciousness on an unprecedented scale.
 <param ve-image
@@ -67,18 +67,18 @@ Located in the Northeastern corner of Dumbarton Oaks, Cherry Hill is planted wit
 
 Fruit Belt[^glfb] is a term in the United States for an area where the microclimate provides good conditions for fruit growing.  Fruit Belts are prominent around the North American Great Lakes region, notably West Michigan (Fruit Ridge) and western Northern Lower Michigan in tandem, and the southern shore of Lake Erie. The conditions that produce a micro-climate favorable to fruit cultivation are the same that produce lake-effect snow; therefore, Fruit Belts and snowbelts are often concurrent. The map at right shows Great Lakes snowbelts which cover a somewhat larger area than the fruit belt.  A Fruit Belt also exists in Central <span eid="Q1223">Washington</span> State.  Berries are grown on the West Coast.
 <param ve-map center="41.651031, -83.541939" zoom="6">
-<param ve-map-layer geojson url="geojson/great-lakes-fruit-belt.json" title="Great Lakes Fruit Belt" active>
+<param ve-map-layer geojson url="/geojson/great-lakes-fruit-belt.json" title="Great Lakes Fruit Belt" active>
 
 ### Cherry Production in Michigan
 
 <param ve-map center="Q984544" zoom="7">
 
 Cherry production in Michigan[^cpm] is a major part of the agriculture industry in the state. Harvesting over 90,000 tons of cherries each year, Michigan is the nation's leading producer of tart cherries. The Montmorency cherry is the variety of tart, or sour, cherry most commonly grown in the state. A Hungarian sour cherry cultivar, Balaton, has been commercially produced in Michigan since 1998.
-<param ve-map-layer geojson url="geojson/great-lakes-fruit-belt.json" title="Great Lakes Fruit Belt" active>
+<param ve-map-layer geojson url="/geojson/great-lakes-fruit-belt.json" title="Great Lakes Fruit Belt" active>
 
 The Fruit Belt (also called the Fruit Ridge) of western Michigan, and, in particular, the Grand Traverse Bay region, produce most of the state's cherries. Michigan's cherry industry is highly vulnerable to a late spring frost, which can wipe out a season's harvest. This occurred most recently in 2012, when over 90% of the crop was lost.  
 <param ve-map-layer mapwarper active mapwarper-id="48772" title="USDA Plant Hardiness Zones (2012)">
-<param ve-map-layer geojson url="geojson/great-lakes-fruit-belt.json" title="Great Lakes Fruit Belt" stroke-width="2" fill-opacity="0.2" stroke="black" active>
+<param ve-map-layer geojson url="/geojson/great-lakes-fruit-belt.json" title="Great Lakes Fruit Belt" stroke-width="2" fill-opacity="0.2" stroke="black" active>
 
 ### National Cherry Festival
 

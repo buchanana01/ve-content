@@ -174,8 +174,8 @@ new Promise(function(resolve, reject) {
           cachingFetch(path, raw) {
             let url = path === '/help'
               ? `https://visual-essays.app/essay/help${raw ? '?raw' : ''}`
-              : `${this.context.service}/essay${this.context.ghRoot}${path}` + `${raw ? '?raw' : ''}`
-            console.log(`cachingFetch: contentBranch=${this.context.branch}  service=${this.context.service} acct=${this.context.acct} repo=${this.context.repo} ghBase=${this.context.ghBase} path=${path} url=${url} cached=${this.essayCache[url] !== undefined}`)
+              : `${this.context.service}/essay${this.context.ghRoot}/docs${path}` + `${raw ? '?raw' : ''}`
+            console.log(`cachingFetch: contentBranch=${this.context.branch} service=${this.context.service} acct=${this.context.acct} repo=${this.context.repo} ghBase=${this.context.ghBase} path=${path} url=${url} cached=${this.essayCache[url] !== undefined}`)
             if (!this.essayCache[url]) {
               this.essayCache[url] = fetch(url).then((resp) => resp.ok ? resp.text() : null)
             }
@@ -244,7 +244,7 @@ new Promise(function(resolve, reject) {
                         const parsedUrl = parseUrl(link.href)
                         if (parsedUrl.hash === '' ) {
                           const pathElems = parsedUrl.pathname.split('/').filter(pathElem => pathElem !== '')
-                          target = `/${pathElems.slice(4).join('/')}`
+                          target = `/${pathElems.slice(this.context.ghBase === '' ? 4 : 5).join('/')}`
                         } else {
                           target = parsedUrl.hash
                         }
