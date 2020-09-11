@@ -26,7 +26,6 @@
       // the correct url will be waiting in the browser's history for
       // the single page app to route accordingly.
       (function(l) {
-        console.log('404 GHP script', l)
         if (l.search) {
           var q = {};
           l.search.slice(1).split('&').forEach(function(v) {
@@ -69,7 +68,7 @@
   </div>
 
   <script>window.context = null</script>
-  <script src="https://dev-visual-essays.netlify.app/visual-essays.min.js"></script>
+  <script src="https://visual-essays.netlify.app/visual-essays.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -118,7 +117,7 @@ new Promise(function(resolve, reject) {
           essayConfig: null,
           essayCache: {},
           progress: 0,
-          appVersion: '0.6.1',
+          appVersion: '0.7.0',
           libVersion: undefined,
           current: undefined,
           markdownViewer: undefined,
@@ -186,7 +185,6 @@ new Promise(function(resolve, reject) {
             .then(html => {
               browserPath = path === '/help'
                 ? '/help'
-                // : `${browserRoot}${(!path || path === '/') ? '/' : path }`
                 : `${this.context.browserRoot}${path}`
 
               console.log(`loadEssay: contentBranch=${this.context.branch} acct=${this.context.acct} repo=${this.context.repo} path=${path} browserPath=${browserPath} replace=${replace}`)
@@ -199,14 +197,12 @@ new Promise(function(resolve, reject) {
               this.current = this.context.path
               this.$nextTick(() => {
                 window._essay = document.getElementById('essay').dataset.name
-                console.log(`window._essay=${window._essay}`)
               })
             })
           },
           viewMarkdown() {
             const url = this.context.path === '/help' && hostname !== 'localhost'
               ? `https://visual-essays.app/essay/help${raw ? '?raw' : ''}`
-              // : `${service}/markdown-viewer` + (acct ? `/${acct}` : '') + (repo ? `/${repo}` : '') + (this.current ? `/${this.current}` : '')
               : `${this.context.service}/markdown-viewer` + (this.current ? `${this.current}` : '')
             if (this.markdownViewer) { this.markdownViewer.close() }
             this.markdownViewer = window.open(url, '_blank', `toolbar=yes,location=yes,left=0,top=0,width=1000,height=1200,scrollbars=yes,status=yes`)
@@ -220,12 +216,6 @@ new Promise(function(resolve, reject) {
           }
         },
         watch: {
-          context: {
-            handler: function(context) {
-              console.log('context', context)
-            },
-            immediate: true
-          },
           isLoaded() {    
             if (this.isLoaded) {
               this.isLoaded = false
