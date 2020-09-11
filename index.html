@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="/images/favicon.ico" rel="icon" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+  <link href="https://visual-essays.netlify.app/main.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+  <script src="https://unpkg.com/http-vue-loader"></script>
+  <style>
+    [v-cloak] { display: none; }
+    #contentContainer { max-width: none !important; width: 100%; height: 100%; margin: 0; padding: 0;}
+  </style>
+</head>
+<body>
+  <div id="app">
+    <v-app>
+
+      <component v-bind:is="context.isMobile ? 'siteMobileHeader' : 'siteHeader'"
+        :site-config="context" :essay-config="essayConfig" :nav="nav" :progress="progress" 
+        :app-version="appVersion" :lib-version="libVersion"
+        @menu-item-clicked="menuItemClicked" @view-markdown="viewMarkdown" @edit-markdown="editMarkdown" @header-height="setHeaderHeight">
+      </component>
+
+      <v-sheet id="scrollableContent" class="overflow-y-auto" :style="`height:${height - (footerHeight || 0)}px;`">
+        <v-container id="contentContainer" :style="`margin-top: ${essayTopMargin}px;`">
+          <v-layout><v-flex><div id="content" v-html="html"></div></v-flex></v-layout>
+        </v-container>
+      </v-sheet>
+
+      <component v-if="!context.isMobile" v-bind:is="'siteFooter'" 
+        :site-config="context" @footer-height="setFooterHeight">
+      </component>
+
+    </v-app>
+  </div>
+
+  <script>window.context = null</script>
+  <script src="https://visual-essays.netlify.app/visual-essays.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.2/build/highlight.min.js"></script>
+  <script src="https://kit.fontawesome.com/19541ddce8.js" crossorigin="anonymous"></script>
+  
+  <script>
+
+new Promise(function(resolve, reject) {
+  function waitForContext() {
+    if (window.context) {
+      resolve(window.context)
+    } else {
+      setTimeout(waitForContext, 250)
+    }
+  }
+  waitForContext()
+})
+.then(context => {
+      console.log('context', context)
+      window.app = new Vue({
+        el: '#app',
+        vuetify: new Vuetify(),
+        components: {
+          'siteHeader': httpVueLoader(context.components.siteHeader && context.components.siteHeader.src || `/components/Header.vue`),
+          'siteMobileHeader': httpVueLoader(context.components.siteMobileHeader && context.components.siteMobileHeader.src || `https://jraw.githubusercontent.com/jstor-labs/ve-components/${context.codeBranch}/components/MobileHeader.vue`),
+          'siteFooter': httpVueLoader(context.components.siteFooter && context.components.siteFooter.src || `https://raw.githubusercontent.com/jstor-labs/ve-components/${context.codeBranch}/components/Footer.vue`),
+          'siteMobileFooter': httpVueLoader(context.components.siteMobileFooter && context.components.siteMobileFooter.src || `https://jraw.githubusercontent.com/jstor-labs/ve-components/${context.codeBranch}/components/MobileFooter.vue`),
+          'markdownViewer': httpVueLoader(`https://JSTOR-Labs.github.io/visual-essays/components/MarkdownViewer.vue`)
+        },
+        data: () => ({
+          context,
+          nav: [
+            { path: '/', title: 'Home', icon: 'mdi-home', enabled: true },
+            { path: '/about', title: 'About', icon: 'mdi-information', enabled: false },
+            { path: '/contact', title: 'Contact', icon: 'mdi-contact-mail', enabled: false },
+            { path: '/help', title: 'Help', icon: 'mdi-help-circle', enabled: false },
+            { path: '/resources', title: 'Resources', icon: 'mdi-library', enabled: false }
+          ],
+          height: 0,
+          width: 0,
+          headerHeight: undefined,
+          footerHeight: undefined,
+          html: undefined,
+          isLoaded: false,
+          essayConfig: null,
+          essayCache: {},
+          progress: 0,
+          appVersion: '0.6.1',
+          libVersion: undefined,
+          current: undefined,
+          markdownViewer: undefined,
+          markdown: undefined
+        }),
+        computed: {
+          essayTopMargin() { return this.context.isMobile
+            ? 200
+            : (this.essayConfig && this.essayConfig.bannerHeight) || (this.context && this.context.bannerHeight) || 400 }
+        },
+        mounted() {
+          this.height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
+          this.width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
+          if (!this.context.isTouchDevice) {
+            new ResizeObserver(entries => {
+              entries.forEach(e => { this.height = e.contentRect.height; this.width = e.contentRect.width })
+            }).observe(document.getElementById('content'))
+          }
+          window.onpopstate = (e) => { this.loadEssay(e.state.file, true) }
+          this.loadEssay(this.context.path)
+          // Find and preload navigation pages
+          this.nav.filter(navItem => !navItem.enabled)
+          .forEach(navItem => {
+            this.cachingFetch(navItem.path)
+            .then(html => { if (html) {this.nav.map(item => item.enabled = item.enabled || item.path == navItem.path)} })
+          })
+        },
+        updated() {
+          this.sync()
+        },
+        methods: {
+          sync() {
+            if (window.vm) {
+              if (this.headerHeight !== undefined && this.headerHeight !== window.vm.$store.getters.headerHeight) {
+                window.vm.$store.dispatch('setHeaderHeight', this.headerHeight)
+              }
+              if (this.footerHeight !== undefined && this.footerHeight !== window.vm.$store.getters.footerHeight) {
+                window.vm.$store.dispatch('setFooterHeight', this.footerHeight)
+              }
+            }
+          },
+          setHeaderHeight(height) {
+            this.headerHeight = height
+            this.sync()
+          },
+          setFooterHeight(height) {
+            this.footerHeight = height
+            this.sync()
+          },
+          menuItemClicked(path) {
+            this.loadEssay(path)
+          },
+          cachingFetch(path, raw) {
+            let url = path === '/help'
+              ? `https://visual-essays.app/essay/help${raw ? '?raw' : ''}`
+              : `${this.context.service}/essay/${this.context.acct}/${this.context.repo}/${this.context.branch}${path}` + `${raw ? '?raw' : ''}`
+            console.log(`cachingFetch: contentBranch=${this.context.branch}  service=${this.context.service} acct=${this.context.acct} repo=${this.context.repo} path=${path} url=${url} cached=${this.essayCache[url] !== undefined}`)
+            if (!this.essayCache[url]) {
+              this.essayCache[url] = fetch(url).then((resp) => resp.ok ? resp.text() : null)
+            }
+            return this.essayCache[url]
+          },
+          loadEssay(path, replace) {
+            this.cachingFetch(path)
+            .then(html => {
+              browserPath = path === '/help'
+                ? '/help'
+                // : `${browserRoot}${(!path || path === '/') ? '/' : path }`
+                : `${this.context.browserRoot}${path}`
+
+              console.log(`loadEssay: contentBranch=${this.context.branch} acct=${this.context.acct} repo=${this.context.repo} path=${path} browserPath=${browserPath} replace=${replace}`)
+              if (replace) {
+                history.replaceState({file: path || ''}, '', browserPath)
+              } else {
+                history.pushState({file: path || ''}, '', browserPath)
+              }
+              this.html = html
+              this.current = this.context.path
+              this.$nextTick(() => {
+                window._essay = document.getElementById('essay').dataset.name
+                console.log(`window._essay=${window._essay}`)
+              })
+            })
+          },
+          viewMarkdown() {
+            const url = this.context.path === '/help' && hostname !== 'localhost'
+              ? `https://visual-essays.app/essay/help${raw ? '?raw' : ''}`
+              // : `${service}/markdown-viewer` + (acct ? `/${acct}` : '') + (repo ? `/${repo}` : '') + (this.current ? `/${this.current}` : '')
+              : `${this.context.service}/markdown-viewer` + (this.current ? `${this.current}` : '')
+            if (this.markdownViewer) { this.markdownViewer.close() }
+            this.markdownViewer = window.open(url, '_blank', `toolbar=yes,location=yes,left=0,top=0,width=1000,height=1200,scrollbars=yes,status=yes`)
+          },
+          editMarkdown(editor) {
+            const url = editor == 'stackedit'
+              ? `https://stackedit.io/app#providerId=githubWorkspace&owner=${this.context.acct}&repo=${this.context.repo}&branch=${this.context.branch}`
+              : `https://editor.visual-essays.app${this.context.ghRoot}${this.context.path === '/' ? window._essay : this.current}.md`
+            if (this.markdownViewer) { this.markdownViewer.close() }
+            this.markdownViewer = window.open(url, '_blank', `toolbar=yes,location=yes,left=0,top=0,width=1400,height=1200,scrollbars=yes,status=yes`)
+          }
+        },
+        watch: {
+          context: {
+            handler: function(context) {
+              console.log('context', context)
+            },
+            immediate: true
+          },
+          isLoaded() {    
+            if (this.isLoaded) {
+              this.isLoaded = false
+              this.$nextTick(() => {
+                const scrollableContent = document.getElementById('scrollableContent')
+                if (scrollableContent) {
+                  scrollableContent.scrollTo(0, 0)
+                }
+                // convert embedded essay links
+                const essayElem = document.getElementById('essay')
+                if (essayElem) {
+                  essayElem.querySelectorAll('a').forEach(link => {
+                    if (!link.href || link.href.indexOf(this.context.service) === 0 || link.href.indexOf('/help#') > 0 ) {
+                      let target = link.dataset.target
+                      if (!target) { 
+                        const parsedUrl = parseUrl(link.href)
+                        if (parsedUrl.hash === '' ) {
+                          const pathElems = parsedUrl.pathname.split('/').filter(pathElem => pathElem !== '')
+                          target = `/${pathElems.slice(4).join('/')}`
+                        } else {
+                          target = parsedUrl.hash
+                        }
+                      }
+                      link.addEventListener('click', (e) => {
+                        if (target[0] === '#') {
+                          document.querySelector(target).scrollIntoView({block:'center'})
+                        } else {
+                          this.loadEssay(target)
+                        }
+                      })
+                      link.removeAttribute('href')
+                      link.setAttribute('data-target', target)
+                    } else {
+                      link.innerHTML += '<sup><i class="fal fa-external-link-alt" style="margin-left:4px;font-size:0.8em;color:blue;"></i></sup>'
+                      link.setAttribute('target', '_blank')
+                    }
+                  })
+                }
+              })
+            }
+          }
+        }
+      })
+    })
+    function parseUrl (href) {
+      const match = href.match(/^(https?)\:\/\/(([^:\/?#]*)(?:\:([0-9]+))?)(\/[^?#]*)(\?[^#]*|)(#.*|)$/)
+      return match && {protocol: match[1], host: match[2], hostname: match[3], origin: `${match[1]}://${match[2]}`, port: match[4], pathname: match[5], search: match[6], hash: match[7]}
+    }
+  </script>
+</body>
+</html>
