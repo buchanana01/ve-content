@@ -1,6 +1,6 @@
-banner<a href="https://visual-essays.app"><img src="/images/ve-button.png"></a>
+<a href="https://visual-essays.app"><img src="images/ve-button.png"></a>
 
-<param ve-config title="Visual Essays"author="Ron" banner="images/header.jpg">
+<param ve-config title="Visual Essays"author="Ron" banner="/images/header.jpg">
 
 # Visual Essays
 
@@ -10,5 +10,5 @@ Visual essays are especially well suited for story telling that uses maps, image
 
 The ability to easily associate text with maps and multimedia is useful but the real power in the visual essay approach used here is the ability to leverage open knowledge graphs such as  [Wikidata](https://www.wikidata.org/)  to obtain data that can be used for automatically generating information dialogs, location coordinates, image URLs, and other information about entities associated with a section of text. At present the visual essays can use entities from both the Wikidata and JSTOR knowledge graphs. Support for using other linked open data (LOD) sources may be provided in future versions.
 
-- [Sample essay](/docs/sample)
+- [Sample essay](sample)
 - [Sample essay with annotated images](kent-seaside-resorts)
