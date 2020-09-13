@@ -240,7 +240,7 @@ new Promise(function(resolve, reject) {
                           const pathElems = parsedUrl.pathname.split('/').filter(pathElem => pathElem !== '')
                           const offset = this.context.mdRoot.split('/').filter(pe => pe !== '').length
                           console.log(pathElems, this.context.mdRoot, offset)
-                          target = `/${pathElems.slice(4 + offset).join('/')}`
+                          target = `/${pathElems.slice(2 + offset).join('/')}`
                         } else {
                           target = parsedUrl.hash
                         }
