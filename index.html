@@ -89,6 +89,7 @@ new Promise(function(resolve, reject) {
 })
 .then(context => {
       console.log('context', context)
+      context.service = 'https://dev.visual-essays.app'
       window.app = new Vue({
         el: '#app',
         vuetify: new Vuetify(),
