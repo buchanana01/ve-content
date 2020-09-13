@@ -68,7 +68,7 @@
   </div>
 
   <script>window.context = null</script>
-  <script src="https://dev-visual-essays.netlify.app/visual-essays.min.js"></script>
+  <script src="https://visual-essays.netlify.app/visual-essays.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -89,7 +89,6 @@ new Promise(function(resolve, reject) {
 })
 .then(context => {
       console.log('context', context)
-      context.service = 'https://dev.visual-essays.app'
       window.app = new Vue({
         el: '#app',
         vuetify: new Vuetify(),
@@ -177,7 +176,7 @@ new Promise(function(resolve, reject) {
               url = `https://visual-essays.app/essay/help${raw ? '?raw' : ''}`
             } else {
               url = `${this.context.service}/essay/${this.context.acct}/${this.context.repo}${path}`
-              url += `?branch=${this.context.branch}&root=${this.context.ghRoot}${raw ? '&raw' : ''}`
+              url += `?branch=${this.context.branch}&root=${this.context.mdRoot}${raw ? '&raw' : ''}`
             }
             console.log(`cachingFetch: contentBranch=${this.context.branch} service=${this.context.service} acct=${this.context.acct} repo=${this.context.repo} ghBase=${this.context.ghBase} path=${path} url=${url} cached=${this.essayCache[url] !== undefined}`)
             if (!this.essayCache[url]) {
@@ -215,7 +214,7 @@ new Promise(function(resolve, reject) {
           editMarkdown(editor) {
             const url = editor == 'stackedit'
               ? `https://stackedit.io/app#providerId=githubWorkspace&owner=${this.context.acct}&repo=${this.context.repo}&branch=${this.context.branch}`
-              : `https://editor.visual-essays.app${this.context.ghRoot}${this.context.path === '/' ? window._essay : this.current}.md`
+              : `https://editor.visual-essays.app${this.context.mdRoot}${this.context.path === '/' ? window._essay : this.current}.md`
             if (this.markdownViewer) { this.markdownViewer.close() }
             this.markdownViewer = window.open(url, '_blank', `toolbar=yes,location=yes,left=0,top=0,width=1400,height=1200,scrollbars=yes,status=yes`)
           }
@@ -239,8 +238,8 @@ new Promise(function(resolve, reject) {
                         const parsedUrl = parseUrl(link.href)
                         if (parsedUrl.hash === '' ) {
                           const pathElems = parsedUrl.pathname.split('/').filter(pathElem => pathElem !== '')
-                          const offset = this.context.ghRoot.split('/').filter(pe => pe !== '').length
-                          console.log(pathElems, this.context.ghRoot, offset)
+                          const offset = this.context.mdRoot.split('/').filter(pe => pe !== '').length
+                          console.log(pathElems, this.context.mdRoot, offset)
                           target = `/${pathElems.slice(4 + offset).join('/')}`
                         } else {
                           target = parsedUrl.hash

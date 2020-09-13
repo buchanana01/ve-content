@@ -2,5 +2,5 @@
     "title": "Visual Essays",
     "banner": "/images/header.jpg",
     "bannerHeight": 400,
-    "ghRoot": "/docs"
+    "mdRoot": "/docs"
 }
