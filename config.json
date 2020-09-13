@@ -1,5 +1,6 @@
 {
     "title": "Visual Essays",
     "banner": "/images/header.jpg",
-    "bannerHeight": 400
+    "bannerHeight": 400,
+    "ghRoot": "content/docs"
 }

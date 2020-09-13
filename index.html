@@ -68,7 +68,7 @@
   </div>
 
   <script>window.context = null</script>
-  <script src="https://visual-essays.netlify.app/visual-essays.min.js"></script>
+  <script src="https://dev-visual-essays.netlify.app/visual-essays.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -171,9 +171,13 @@ new Promise(function(resolve, reject) {
             this.loadEssay(path)
           },
           cachingFetch(path, raw) {
-            let url = path === '/help'
-              ? `https://visual-essays.app/essay/help${raw ? '?raw' : ''}`
-              : `${this.context.service}/essay${this.context.ghRoot}/docs${path}` + `${raw ? '?raw' : ''}`
+            let url
+            if ( path === '/help') {
+              url = `https://visual-essays.app/essay/help${raw ? '?raw' : ''}`
+            } else {
+              url = `${this.context.service}/essay/${this.context.acct}/${this.context.repo}${path}`
+              url += `?branch=${this.context.branch}&root=${this.context.ghRoot}${raw ? '&raw' : ''}`
+            }
             console.log(`cachingFetch: contentBranch=${this.context.branch} service=${this.context.service} acct=${this.context.acct} repo=${this.context.repo} ghBase=${this.context.ghBase} path=${path} url=${url} cached=${this.essayCache[url] !== undefined}`)
             if (!this.essayCache[url]) {
               this.essayCache[url] = fetch(url).then((resp) => resp.ok ? resp.text() : null)
