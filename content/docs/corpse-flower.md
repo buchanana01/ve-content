@@ -23,7 +23,13 @@ Amorphophallus titanum, the titan arum, is a flowering plant with the largest un
        date-format="YYYY"
        fps="4"
        zoom="1.8">
-<param ve-image iiif url="https://upload.wikimedia.org/wikipedia/commons/f/f0/Corpse_flower_%2871198%29a.jpg">
+<param ve-image iiif 
+       url="https://upload.wikimedia.org/wikipedia/commons/f/f0/Corpse_flower_%2871198%29a.jpg"
+       label="Corpse flower"
+       description="Titan arum (Amorphophallus titanum), also known as the corpse flower in New York Botanical Garden's Haupt Conservatory"
+       date="2018"
+       attribution="https://commons.wikimedia.org/wiki/File:Corpse_flower_(71198)a.jpg"
+       license="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
 
 The titan arum grows in the wild only in the equatorial rainforests of Sumatra, Indonesia. It was first scientifically described in 1878 by Italian botanist Odoardo Beccari. The plant flowers only infrequently in the wild and even more rarely when cultivated. It first flowered in cultivation at the Royal Botanic Gardens, Kew, London, UK in 1889, with over one hundred cultivated blossoms since then. The first documented flowerings in the United States were at the New York Botanical Garden in 1937 and 1939. This flowering also inspired the designation of the titan arum as the official flower of the Bronx in 1939, only to be replaced in 2000 by the day lily. The number of cultivated plants has increased in recent years, and it is not uncommon for there to be five or more flowering events in gardens around the world in a single year. Advanced pollination techniques mean that this plant is rarely cultivated by amateur gardeners. However In 2011, Roseville High School (Roseville, California) became the first high school in the world to successfully bring a titan arum to bloom.
 <param ve-map center="Q188617" zoom="2">
