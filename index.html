@@ -239,8 +239,9 @@ new Promise(function(resolve, reject) {
                         const parsedUrl = parseUrl(link.href)
                         if (parsedUrl.hash === '' ) {
                           const pathElems = parsedUrl.pathname.split('/').filter(pathElem => pathElem !== '')
-                          console.log(pathElems, this.context.ghBase)
-                          target = `/${pathElems.slice(6).join('/')}`
+                          const offset = this.context.ghRoot.split('/').filter(pe => pe !== '').length
+                          console.log(pathElems, this.context.ghRoot, offset)
+                          target = `/${pathElems.slice(4 + offset).join('/')}`
                         } else {
                           target = parsedUrl.hash
                         }
