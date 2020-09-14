@@ -173,7 +173,7 @@ new Promise(function(resolve, reject) {
           cachingFetch(path, raw) {
             let url
             if ( path === '/help') {
-              url = `https://visual-essays.app/essay/help${raw ? '?raw' : ''}`
+              url = `https://visual-essays.app/essay/jstor-labs/ve-content/help?branch=${this.context.branch}&root=/docs`
             } else {
               url = `${this.context.service}/essay/${this.context.acct}/${this.context.repo}${path}`
               url += `?branch=${this.context.branch}&root=${this.context.mdRoot}${raw ? '&raw' : ''}`
@@ -206,8 +206,8 @@ new Promise(function(resolve, reject) {
           },
           viewMarkdown() {
             const url = this.context.path === '/help' && hostname !== 'localhost'
-              ? `https://visual-essays.app/essay/help${raw ? '?raw' : ''}`
-              : `${this.context.service}/markdown-viewer` + (this.current ? `${this.current}` : '')
+              ? `https://visual-essays.app/essay/jstor-labs/ve-content/help?raw&root=/docs&branch=${this.context.branch}`
+              : `${this.context.service}/markdown-viewer/${this.context.acct}/${this.context.repo}${this.context.path}?branch=${this.context.branch}&root=${this.context.mdRoot}`
             if (this.markdownViewer) { this.markdownViewer.close() }
             this.markdownViewer = window.open(url, '_blank', `toolbar=yes,location=yes,left=0,top=0,width=1000,height=1200,scrollbars=yes,status=yes`)
           },
