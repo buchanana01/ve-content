@@ -184,8 +184,8 @@ The `ve-map` directive indicates that a map should be added as a visualization c
 
 The following attributes are used for the time dimension control and animation.  This functionality is provided by the Leaflet TimeDimension plugin.  Refer to [Leaflet.TimeDimension](https://github.com/socib/Leaflet.TimeDimension) for more details on the options.
 - __time-dimension__:  Set to `true` to enable the time dimension controls
-- __time-interval__:  
-- __duration__:  
+- __time-interval__:  String to construct the first available time and the last available time. Format: [ISO8601 Time inverval](https://en.wikipedia.org/wiki/ISO_8601#Time_intervals)
+- __duration__:  Period of time which the features will be shown on the map after their time has passed. If null, all previous times will be shown. Format: [ISO8601 Duration](https://en.wikipedia.org/wiki/ISO_8601#Durations)
 - __max-zoom__:  
 - __date-format__:  
 - __auto-play__:  
@@ -325,6 +325,6 @@ Footnotes and endnotes are not part of the core Markdown syntax.  However, the v
 
 1. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2Njc2MDk3MiwxMDU2NTc3NDk4LC05MT
+eyJoaXN0b3J5IjpbMTcwNzQxMzMwOCwxMDU2NTc3NDk4LC05MT
 E3NjAzNzEsMTI1MDY2MTQ2OF19
 -->
