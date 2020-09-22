@@ -167,12 +167,12 @@ The `ve-map` directive indicates that a map should be added as a visualization c
     - [`OpenSteetMap`](https://leaflet-extras.github.io/leaflet-providers/preview/#filter=OpenStreetMap.Mapnik)  
     - [`OpenTopoMap`](https://leaflet-extras.github.io/leaflet-providers/preview/#filter=OpenTopoMap)  
     - [`Stamen_Watercolor`](https://leaflet-extras.github.io/leaflet-providers/preview/#filter=Stamen.Watercolor)  
-    - [`Stamen_Watercolor`](https://leaflet-extras.github.io/leaflet-providers/preview/#filter=)  
+    - [`Stamen_TerrainBackground`](https://leaflet-extras.github.io/leaflet-providers/preview/#filter=)  
     - [`Stadia_AlidadeSmooth`](https://leaflet-extras.github.io/leaflet-providers/preview/#filter=)  
     - [`Stadia_AlidadeSmoothDark`](https://leaflet-extras.github.io/leaflet-providers/preview/#filter=)  
     - [`Esri_WorldPhysical`](https://leaflet-extras.github.io/leaflet-providers/preview/#filter=Esri.WorldPhysical)    
-    - [`Esri_WorldPhysical`](https://leaflet-extras.github.io/leaflet-providers/preview/#filter=Esri.WorldPhysical)
-    - [`Esri_WorldPhysical`](https://leaflet-extras.github.io/leaflet-providers/preview/#filter=Esri.WorldPhysical)
+    - [`Esri_WorldGrayCanvas`](https://leaflet-extras.github.io/leaflet-providers/preview/#filter=Esri.WorldPhysical)
+    - [`Esri_NatGeoWorldMap`](https://leaflet-extras.github.io/leaflet-providers/preview/#filter=Esri.WorldPhysical)
 - __center__:  This attribute defines the center point for the map.  The center point can be defined as a latitude and longitude coordinates or using a QID for an entity that is associated with geo-coordinates.  For instance, the following are equivalent.  They both use the city of Ann Arbor, Michigan as the map center point.  In the first version the latitude and longitude coordinates are specified and in the second the Wikidata QID for Ann Arbor is provided. 
     ```html
     <param ve-map center="42.2813, -83.7483">
@@ -316,5 +316,5 @@ Footnotes and endnotes are not part of the core Markdown syntax.  However, the v
 
 1. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4MjYwMzIwXX0=
+eyJoaXN0b3J5IjpbLTE3MzA5MTU1OTJdfQ==
 -->
