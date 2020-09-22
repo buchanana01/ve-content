@@ -200,14 +200,14 @@ By default, images are presented as IIIF images providing deep zoom and panning 
 
 - __title__:  The title attribute is used for the image caption.  Markdown text formatting is supported in the title allowing for italicized and bold text.
 - __url__:  The URL to the source version of the image.
-- __iiif-url__:  The URL to a IIIF service endpoint for the image, if one exists.
+- __iiif__:  Use IIIF tiled image.
 - __manifest__:  The URL to the IIIF presentation manifest for the image, if one exists.
 - __fit__:  This attribute defines how an image will be scaled or cropped in the image viewer window.  Possible values for this attribute are
     -  `contain`:  The replaced content is scaled to maintain its aspect ratio while fitting within the element's content box
     -  `cover`:  (default) The replaced content is sized to maintain its aspect ratio while filling the element's entire content box. The object will be clipped to fit
  - __region__: The region attribute is used to show a cropped region of the image in the image viewer.  The entire image is loaded and can be seen by zooming and panning but the initial display will only include the specified region.  The value for a region is a comma separated sequence of 4 integers representing the origin, width and height.  The origin includes both the x and y coordinates relative to the top left of the image.  The region may be expressed as absolute pixel values or as percentages of the relative values.  More information on IIIF regions can be found at [https://iiif.io/api/image/2.0/#region](https://iiif.io/api/image/2.0/#region)
  - __attribution__:  An attribution statement to associate with the image.
- - __static__:  Forces the image to be displayed as a static image rather than using the IIIF viewer with deep zoom and panning support
+
 
 ## ve-video
 
@@ -310,5 +310,5 @@ Footnotes and endnotes are not part of the core Markdown syntax.  However, the v
 
 1. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2MDYzMTE5OV19
+eyJoaXN0b3J5IjpbMTcwMjgyMjAzMl19
 -->
