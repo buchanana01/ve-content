@@ -204,7 +204,7 @@ The following attributes control marker and geojson formatting:
 - __marker-symbol-color__:  Default=`#FFF`
 - __marker-symbol-xoffset__: Default=`0`
 - __marker-symbol-yoffset__:  Default=`0`
-- __stroke__:  Line color.
+- __stroke__:  Line color.  Default=`'#FB683F'`
 - __stroke-width__ :  Marker/GeoJSON feature line width.
 - __stroke-opacity__:  Default=`0`
 - __fill__:  Fill color.  Default=`#32C125`
@@ -343,6 +343,6 @@ Footnotes and endnotes are not part of the core Markdown syntax.  However, the v
 
 1. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTIzMDcwNTIsMTA1NjU3NzQ5OCwtOT
+eyJoaXN0b3J5IjpbLTEzNzIzMzY3NjgsMTA1NjU3NzQ5OCwtOT
 ExNzYwMzcxLDEyNTA2NjE0NjhdfQ==
 -->
