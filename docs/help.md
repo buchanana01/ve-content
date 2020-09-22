@@ -183,6 +183,7 @@ The `ve-map` directive indicates that a map should be added as a visualization c
 - __prefer-geojson__:  Location entities are automatically added to a map components that is visible for an active text element.  By default the location is represented as a marker pinned at a discrete geo-coordinate.  However, many location entities in the Wikidata knowledge graph can also be associated with GeoJSON shape files that represent the location as region using a polygon shape.  If the visualization of a location on a map using the GeoJSON defined region is preferred over a simple marker/pin this attribute is used to express that preference.
 
 The following attributes are used for the time dimension control and animation.  This functionality is provided by the Leaflet TimeDimension plugin.  Refer to [Leaflet.TimeDimension](https://github.com/socib/Leaflet.TimeDimension) for more details on the options.
+
 - __time-dimension__:  Set to `true` to enable the time dimension controls
 - __time-interval__:  String to construct the first available time and the last available time. Format: [ISO8601 Time inverval](https://en.wikipedia.org/wiki/ISO_8601#Time_intervals)
 - __duration__:  Period of time which the features will be shown on the map after their time has passed. If null, all previous times will be shown. Format: [ISO8601 Duration](https://en.wikipedia.org/wiki/ISO_8601#Durations)
@@ -192,6 +193,10 @@ The following attributes are used for the time dimension control and animation. 
 - __auto-fit__:  When running the animation automatically resize the viewing area to fit all active points.  Default=`false`
 - __loop__:  Loop the animation when `auto-play` is enabled.  Default=`false`
 - __fps__:  Animation speed.  Default=`1`fps
+
+The following attributes control marker and geojson formatting:
+
+- __marker-style__:  Use `circ
 
 ## ve-map-layer
 
@@ -326,6 +331,6 @@ Footnotes and endnotes are not part of the core Markdown syntax.  However, the v
 
 1. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3NzQ3NDgzLDEwNTY1Nzc0OTgsLTkxMT
-c2MDM3MSwxMjUwNjYxNDY4XX0=
+eyJoaXN0b3J5IjpbMTA2MDA3NjI3MywxMDU2NTc3NDk4LC05MT
+E3NjAzNzEsMTI1MDY2MTQ2OF19
 -->
