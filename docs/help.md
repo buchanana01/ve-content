@@ -198,9 +198,9 @@ The following attributes control marker and geojson formatting:
 
 - __marker-style__:  `circle` or `pin` - default = `pin`
 - __radius__:  Marker radius when `marker-style` is set to `circle`.  Default=`4`
-- __marker-symbol__:  A [Fontawesome icon](https://fontawesome.com/icons?d=gallery) label.  D
-- __marker-color__: 
-- __opacity__: 
+- __marker-symbol__:  A [Fontawesome icon](https://fontawesome.com/icons?d=gallery) label.  Default=`circle`
+- __marker-color__:  Default=`
+- __opacity__:  Marker opacity
 - __marker-symbol-color__: 
 - __marker-symbol-xoffset__: 
 - __marker-symbol-yoffset__: 
@@ -345,6 +345,6 @@ Footnotes and endnotes are not part of the core Markdown syntax.  However, the v
 
 1. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5OTAzMDA2MywxMDU2NTc3NDk4LC05MT
-E3NjAzNzEsMTI1MDY2MTQ2OF19
+eyJoaXN0b3J5IjpbLTE1NDcyODgzMjgsMTA1NjU3NzQ5OCwtOT
+ExNzYwMzcxLDEyNTA2NjE0NjhdfQ==
 -->
