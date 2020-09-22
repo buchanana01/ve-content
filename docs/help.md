@@ -167,9 +167,9 @@ The `ve-map` directive indicates that a map should be added as a visualization c
     - [`OpenSteetMap`](https://leaflet-extras.github.io/leaflet-providers/preview/#filter=OpenStreetMap.Mapnik)  
     - [`OpenTopoMap`](https://leaflet-extras.github.io/leaflet-providers/preview/#filter=OpenTopoMap)  
     - [`Stamen_Watercolor`](https://leaflet-extras.github.io/leaflet-providers/preview/#filter=Stamen.Watercolor)  
-    - [`Stamen_TerrainBackground`](https://leaflet-extras.github.io/leaflet-providers/preview/#filter=)  
-    - [`Stadia_AlidadeSmooth`](https://leaflet-extras.github.io/leaflet-providers/preview/#filter=)  
-    - [`Stadia_AlidadeSmoothDark`](https://leaflet-extras.github.io/leaflet-providers/preview/#filter=)  
+    - [`Stamen_TerrainBackground`](https://leaflet-extras.github.io/leaflet-providers/preview/#filter=Stamen.TerrainBackground)  
+    - [`Stadia_AlidadeSmooth`](https://leaflet-extras.github.io/leaflet-providers/preview/#filter=Stadia.AlidadeSmooth)  
+    - [`Stadia_AlidadeSmoothDark`](https://leaflet-extras.github.io/leaflet-providers/preview/#filter=Stadia.AlidadeSmoothDark)  
     - [`Esri_WorldPhysical`](https://leaflet-extras.github.io/leaflet-providers/preview/#filter=Esri.WorldPhysical)    
     - [`Esri_WorldGrayCanvas`](https://leaflet-extras.github.io/leaflet-providers/preview/#filter=Esri.WorldPhysical)
     - [`Esri_NatGeoWorldMap`](https://leaflet-extras.github.io/leaflet-providers/preview/#filter=Esri.WorldPhysical)
@@ -316,5 +316,5 @@ Footnotes and endnotes are not part of the core Markdown syntax.  However, the v
 
 1. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzA5MTU1OTJdfQ==
+eyJoaXN0b3J5IjpbMTU2NzQxMTc1XX0=
 -->
