@@ -205,12 +205,10 @@ The following attributes control marker and geojson formatting:
 - __marker-symbol-xoffset__: Default=`0`
 - __marker-symbol-yoffset__:  Default=`0`
 - __stroke__:  Line color.
-- __stroke-width__ :  Marker/GeoJSON feature line width.  Default=`0`
-- __stroke-opacity__:  
-- __fill__:  
-- __fill-opacity__:  
-- __stroke__:  
-- ____: 
+- __stroke-width__ :  Marker/GeoJSON feature line width.
+- __stroke-opacity__:  Default=`0`
+- __fill__:  Fill color.  Default=`#32C125`
+- __fill-opacity__:  Default=`0.5`
 
 ## ve-map-layer
 
@@ -345,6 +343,6 @@ Footnotes and endnotes are not part of the core Markdown syntax.  However, the v
 
 1. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxMTIzNzkwNCwxMDU2NTc3NDk4LC05MT
-E3NjAzNzEsMTI1MDY2MTQ2OF19
+eyJoaXN0b3J5IjpbLTE4NTIzMDcwNTIsMTA1NjU3NzQ5OCwtOT
+ExNzYwMzcxLDEyNTA2NjE0NjhdfQ==
 -->
