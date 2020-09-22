@@ -182,7 +182,7 @@ The `ve-map` directive indicates that a map should be added as a visualization c
 - __show-labels__:  By default, the labels for any locations plotted on a map (both markers and GeoJSON features) are not automatically displayed when the map is loaded.  This attribute can be used to override this default behavior and show labels on loading.  Note that a user can still open the label by hovering over and/or clicking on the label or GeoJSON defined region.
 - __prefer-geojson__:  Location entities are automatically added to a map components that is visible for an active text element.  By default the location is represented as a marker pinned at a discrete geo-coordinate.  However, many location entities in the Wikidata knowledge graph can also be associated with GeoJSON shape files that represent the location as region using a polygon shape.  If the visualization of a location on a map using the GeoJSON defined region is preferred over a simple marker/pin this attribute is used to express that preference.
 
-The following attributes are used for the time dimension control and animation.  This functionality is provided by the Leaflet TimeDimension plugin.  Refer to [Leaflet.TimeDimension](Leaflet.TimeDimension options: see https://github.com/socib/Leaflet.TimeDimension) for more details on the options
+The following attributes are used for the time dimension control and animation.  This functionality is provided by the Leaflet TimeDimension plugin.  Refer to [Leaflet.TimeDimension](https://github.com/socib/Leaflet.TimeDimension) for more details on the options.
 - __time-dimension__:  Set to `true` to enable the time dimension controls
 - __time-interval__:  
 - __duration__:  
@@ -325,6 +325,6 @@ Footnotes and endnotes are not part of the core Markdown syntax.  However, the v
 
 1. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyNzgyMzI5NSwxMDU2NTc3NDk4LC05MT
+eyJoaXN0b3J5IjpbMTQ2Njc2MDk3MiwxMDU2NTc3NDk4LC05MT
 E3NjAzNzEsMTI1MDY2MTQ2OF19
 -->
