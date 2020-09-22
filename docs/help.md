@@ -214,10 +214,10 @@ iconXOffset:  props['marker-symbol-xoffset'] || 0,
 
 iconYOffset:  props['marker-symbol-yoffset'] || 0,
 - __marker-symbol__: 
-- __icon__: 
-- ____: 
-- ____: 
-- ____: 
+- __marker-color__: 
+- __opacity__: 
+- __marker-symbol-color__: 
+- __marker-symbol-xoffset__: 
 - ____: 
 - ____: 
 - ____: 
@@ -363,6 +363,6 @@ Footnotes and endnotes are not part of the core Markdown syntax.  However, the v
 
 1. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5NjU2MjI5OCwxMDU2NTc3NDk4LC05MT
+eyJoaXN0b3J5IjpbMTAxMzA4MTkxMCwxMDU2NTc3NDk4LC05MT
 E3NjAzNzEsMTI1MDY2MTQ2OF19
 -->
