@@ -181,18 +181,16 @@ The `ve-map` directive indicates that a map should be added as a visualization c
 - __zoom__:  This attribute defines the starting map zoom level.  This number can be expressed in 0.1 increments, such as `zoom="3.4"`
 - __show-labels__:  By default, the labels for any locations plotted on a map (both markers and GeoJSON features) are not automatically displayed when the map is loaded.  This attribute can be used to override this default behavior and show labels on loading.  Note that a user can still open the label by hovering over and/or clicking on the label or GeoJSON defined region.
 - __prefer-geojson__:  Location entities are automatically added to a map components that is visible for an active text element.  By default the location is represented as a marker pinned at a discrete geo-coordinate.  However, many location entities in the Wikidata knowledge graph can also be associated with GeoJSON shape files that represent the location as region using a polygon shape.  If the visualization of a location on a map using the GeoJSON defined region is preferred over a simple marker/pin this attribute is used to express that preference.
-- __time-dimension__:  
+
+The following attributes are used for the time dimension control and animation:
+- __time-dimension__:  '
 - __time-interval__:  
 - __duration__:  
 - __max-zoom__:  
-
 - __date-format__:  
-
 - __auto-play__:  
-
 - __auto-fit__:  
-
-- __fps=__:  
+- __fps__:  
 
 ## ve-map-layer
 
@@ -327,5 +325,6 @@ Footnotes and endnotes are not part of the core Markdown syntax.  However, the v
 
 1. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxMTc2MDM3MSwxMjUwNjYxNDY4XX0=
+eyJoaXN0b3J5IjpbLTk1MzM1OTgwMCwtOTExNzYwMzcxLDEyNT
+A2NjE0NjhdfQ==
 -->
