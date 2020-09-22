@@ -24,7 +24,7 @@
 
 # Introduction
 
-Visual essays are web pages created from annotated text files.  The text files are formatted using [Markdown](https://www.markdownguide.org/getting-started/),
+Visual Essays are web pages created from annotated text files.  The text files are formatted using [Markdown](https://www.markdownguide.org/getting-started/),
 a lightweight markup language.  The essay text can be annotated with simple tags that associate entities (people, locations, etc), images, maps, and videos with sections of text, typically paragraphs but can also be as small as a single word or as large as the entire essay.  The visual essay tools add interactive visualizations to the rendered web page using information contained in the tags.
 
 Visual essays are especially well suited for story telling that uses maps, images, and videos.  Adding a few simple tags to a text can result in an engaging web page that provides context and depth to the written text
@@ -309,3 +309,6 @@ Footnotes and endnotes are not part of the core Markdown syntax.  However, the v
 # Tips and tricks
 
 1. 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE5MDkyNjc1MjFdfQ==
+-->
