@@ -190,7 +190,7 @@ The following attributes are used for the time dimension control and animation. 
 - __date-format__:  Format to use for the date/time in the time dimension control.  Default=`YYYY-MM-DD` (refer to https://momentjs.com/docs/#/displaying/)
 - __auto-play__:   Animate the map automatically.  Default=`false`
 - __auto-fit__:  When running the animation automatically resize the viewing area to fit all active points.  Default=`false`
-- __loop__:  Loop
+- __loop__:  Loop the animation when `auto-play` is enabled.  Default=`false`
 - __fps__:  Animation speed.  Default=`1`fps
 
 ## ve-map-layer
@@ -326,6 +326,6 @@ Footnotes and endnotes are not part of the core Markdown syntax.  However, the v
 
 1. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4NTQ2NTYxNiwxMDU2NTc3NDk4LC05MT
-E3NjAzNzEsMTI1MDY2MTQ2OF19
+eyJoaXN0b3J5IjpbMTA3NzQ3NDgzLDEwNTY1Nzc0OTgsLTkxMT
+c2MDM3MSwxMjUwNjYxNDY4XX0=
 -->
