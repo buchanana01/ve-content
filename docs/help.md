@@ -174,7 +174,7 @@ The `ve-map` directive indicates that a map should be added as a visualization c
     <param ve-map center="Q485172">
     ```
 - __zoom__:  This attribute defines the starting map zoom level.  This number can be expressed in 0.1 increments, such as `zoom="3.4"`
-- __hide-labels__:  By default, the labels for any locations plotted on a map (both markers and GeoJSON features) will be displayed.  This attribute can be used to inhibit this default behavior.  Note that a user can still open the label by hovering over and/or clicking on the label or GeoJSON defined region.
+- __show-labels__:  By default, the labels for any locations plotted on a map (both markers and GeoJSON features) are not automatically displayed when the map is loaded.  This attribute can be used to inhibit this default behavior.  Note that a user can still open the label by hovering over and/or clicking on the label or GeoJSON defined region.
 - __prefer-geojson__:  Location entities are automatically added to a map components that is visible for an active text element.  By default the location is represented as a marker pinned at a discrete geo-coordinate.  However, many location entities in the Wikidata knowledge graph can also be associated with GeoJSON shape files that represent the location as region using a polygon shape.  If the visualization of a location on a map using the GeoJSON defined region is preferred over a simple marker/pin this attribute is used to express that preference.
 - __active__: Defines whether the layer is initially displayed on the map.  The default value is `false`.  If this attribute is not set to `true` the user will need to activate the layer from the map control located on the map.  Since `active` is a boolean property (supporting just `true` and `false` values) a shorthand version of the attribute (the attribute name without a value) can be used.
 
@@ -201,7 +201,7 @@ By default, images are presented as IIIF images providing deep zoom and panning 
 - __title__:  The title attribute is used for the image caption.  Markdown text formatting is supported in the title allowing for italicized and bold text.
 - __url__:  The URL to the source version of the image.
 - __iiif__:  Use IIIF tiled image.
-- __static__:  Use a static image rather than an image from an IIIF server.  This is the default.  For large imi 
+- __static__:  Use a static image rather than an image from an IIIF server.  This is the default.  For large images it is recommended that the _iiif_ option be used for better performance. 
 - __manifest__:  The URL to the IIIF presentation manifest for the image, if one exists.
 - __fit__:  This attribute defines how an image will be scaled or cropped in the image viewer window.  Possible values for this attribute are
     -  `contain`:  The replaced content is scaled to maintain its aspect ratio while fitting within the element's content box
@@ -311,5 +311,5 @@ Footnotes and endnotes are not part of the core Markdown syntax.  However, the v
 
 1. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwMDM4MzgyOV19
+eyJoaXN0b3J5IjpbODQ4MTU2MDk5XX0=
 -->
