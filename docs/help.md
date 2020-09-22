@@ -187,9 +187,10 @@ The following attributes are used for the time dimension control and animation. 
 - __time-interval__:  String to construct the first available time and the last available time. Format: [ISO8601 Time inverval](https://en.wikipedia.org/wiki/ISO_8601#Time_intervals)
 - __duration__:  Period of time which the features will be shown on the map after their time has passed. If null, all previous times will be shown. Format: [ISO8601 Duration](https://en.wikipedia.org/wiki/ISO_8601#Durations)
 - __max-zoom__:  The maximum zoom level to use when auto-fit is enabled.  Default=`16`
-- __date-format__:  
+- __date-format__:  Format to use for the date/time in the time dimension control.  Default=`YYYY-MM-DD` (refer to https://momentjs.com/docs/#/displaying/)
 - __auto-play__:   Animate the map automatically.  Default=`false`
 - __auto-fit__:  When running the animation automatically resize the viewing area to fit all active points.  Default=`false`
+- __loop__:  Loop
 - __fps__:  Animation speed.  Default=`1`fps
 
 ## ve-map-layer
@@ -325,6 +326,6 @@ Footnotes and endnotes are not part of the core Markdown syntax.  However, the v
 
 1. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjA4ODAyMDcsMTA1NjU3NzQ5OCwtOT
-ExNzYwMzcxLDEyNTA2NjE0NjhdfQ==
+eyJoaXN0b3J5IjpbMTQ4NTQ2NTYxNiwxMDU2NTc3NDk4LC05MT
+E3NjAzNzEsMTI1MDY2MTQ2OF19
 -->
