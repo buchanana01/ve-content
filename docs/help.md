@@ -198,30 +198,12 @@ The following attributes control marker and geojson formatting:
 
 - __marker-style__:  `circle` or `pin` - default = `pin`
 - __radius__:  Marker radius when `marker-style` is set to `circle`.  Default=`4`
-iconClasses:  `fa fa-${faIcon}`, // you _could_ add other icon classes, not tested.
-
-markerColor:  props['marker-color'] || props['fill'] || '#2C84CB',
-
-markerFillOpacity:  props['opacity'] || 1,
-
-markerStrokeColor:  props['stroke'] || props['marker-color']|| props['fill'] || '#2C84CB',
-
-markerStrokeWidth:  props['stroke-width'] || 0,
-
-iconColor:  props['marker-symbol-color'] || '#FFF',
-
-iconXOffset:  props['marker-symbol-xoffset'] || 0,
-
-iconYOffset:  props['marker-symbol-yoffset'] || 0,
-- __marker-symbol__: 
+- __marker-symbol__:  A [Fontawesome icon](https://fontawesome.com/icons?d=gallery) label.  D
 - __marker-color__: 
 - __opacity__: 
 - __marker-symbol-color__: 
 - __marker-symbol-xoffset__: 
-- ____: 
-- ____: 
-- ____: 
-
+- __marker-symbol-yoffset__: 
 - __stroke__:  
 - __stroke-width__:  
 - __stroke-opacity__:  
@@ -363,6 +345,6 @@ Footnotes and endnotes are not part of the core Markdown syntax.  However, the v
 
 1. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxMzA4MTkxMCwxMDU2NTc3NDk4LC05MT
+eyJoaXN0b3J5IjpbMTY5OTAzMDA2MywxMDU2NTc3NDk4LC05MT
 E3NjAzNzEsMTI1MDY2MTQ2OF19
 -->
