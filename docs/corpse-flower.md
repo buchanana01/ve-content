@@ -4,6 +4,13 @@
        layout="vtl"
        iiif-service="iiifhosting">
 
+<param ve-component 
+       name="mapViewer"
+       src="/components/LeafletTimeDimension.vue"
+       selectors="tag:map"
+       icon="fa-map-marker-alt"
+       label="Maps">
+
 <param eid="Q188617" title="Kew Gardens">
 <param eid="Q3492" title="Sumatra">
 <param eid="Q636275" title="New York Botanical Garden">
@@ -12,10 +19,15 @@
 
 # Amorphophallus titanum
 
-Amorphophallus titanum, the titan arum, is a flowering plant with the largest unbranched inflorescence in the world. The talipot palm, Corypha umbraculifera, has a larger inflorescence, but it is branched rather than unbranched. A. titanum is endemic to Sumatra.  Due to its odor, like that of a rotting corpse, the titan arum is characterized as a carrion flower, and is also known as the corpse flower or corpse plant (Indonesian: bunga bangkai—bunga means flower, while bangkai can be translated as corpse, cadaver, or carrion). For the same reason, the title "corpse flower" is also attributed to the genus Rafflesia.
-<param ve-ltd primary
+Amorphophallus titanum, the titan arum, is a flowering plant with the largest unbranched inflorescence in the world. The talipot palm, Corypha umbraculifera, has a larger inflorescence, but it is branched rather than unbranched. A. titanum is endemic to Sumatra.  Due to its odor, like that of a rotting corpse, the titan arum is characterized as a carrion flower, and is also known as the corpse flower or corpse plant (Indonesian: bunga bangkai—bunga means flower, while bangkai can be translated as corpse, cadaver, or carrion). For the same reason, the title <span data-click-image-zoomto="pct:40,40,20,20">"corpse flower"</span> is also attributed to the genus Rafflesia.
+<param ve-map
        data="/geojson/corpse-flower-bloom.json"
        basemap="Esri_WorldGrayCanvas"
+       marker-type="circle"
+       radius="4"
+       stroke="blue"
+       fill="blue"
+       fill-opacity="1"
        time-dimension="true"
        auto-play="false"
        auto-fit="false"
@@ -23,7 +35,7 @@ Amorphophallus titanum, the titan arum, is a flowering plant with the largest un
        date-format="YYYY"
        fps="4"
        zoom="1.8">
-<param ve-image iiif 
+<param ve-image iiif primary
        url="https://upload.wikimedia.org/wikipedia/commons/f/f0/Corpse_flower_%2871198%29a.jpg"
        label="Corpse flower"
        description="Titan arum (Amorphophallus titanum), also known as the corpse flower in New York Botanical Garden's Haupt Conservatory"
