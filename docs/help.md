@@ -188,9 +188,9 @@ The following attributes are used for the time dimension control and animation. 
 - __duration__:  Period of time which the features will be shown on the map after their time has passed. If null, all previous times will be shown. Format: [ISO8601 Duration](https://en.wikipedia.org/wiki/ISO_8601#Durations)
 - __max-zoom__:  The maximum zoom level to use when auto-fit is enabled.
 - __date-format__:  
-- __auto-play__:  
-- __auto-fit__:  
-- __fps__:  
+- __auto-play__:   Animate the map automatically
+- __auto-fit__:  When running the animation automatically resize the viewing area to fit all active points.
+- __fps__:  Animation 
 
 ## ve-map-layer
 
@@ -325,6 +325,6 @@ Footnotes and endnotes are not part of the core Markdown syntax.  However, the v
 
 1. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyODQzNjYwLDEwNTY1Nzc0OTgsLTkxMT
-c2MDM3MSwxMjUwNjYxNDY4XX0=
+eyJoaXN0b3J5IjpbLTIwNjkwMTk2NTcsMTA1NjU3NzQ5OCwtOT
+ExNzYwMzcxLDEyNTA2NjE0NjhdfQ==
 -->
