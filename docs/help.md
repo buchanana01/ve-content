@@ -197,7 +197,14 @@ The following attributes are used for the time dimension control and animation. 
 The following attributes control marker and geojson formatting:
 
 - __marker-style__:  `circle` or `pin` - default = `pin`
-- __radius__:  Marker radius when `marker-style` is set to `circle`.  Defau
+- __radius__:  Marker radius when `marker-style` is set to `circle`.  Default=`4`
+- __stroke__:  
+- __stroke-width__:  
+- __stroke-opacity__:  
+- __stroke__:  
+- __stroke__:  
+- __stroke__:  
+
 
 ## ve-map-layer
 
@@ -332,6 +339,6 @@ Footnotes and endnotes are not part of the core Markdown syntax.  However, the v
 
 1. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwMTAxMzM0OCwxMDU2NTc3NDk4LC05MT
+eyJoaXN0b3J5IjpbMTMyNzE4MjEzMCwxMDU2NTc3NDk4LC05MT
 E3NjAzNzEsMTI1MDY2MTQ2OF19
 -->
