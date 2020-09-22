@@ -183,7 +183,7 @@ The `ve-map` directive indicates that a map should be added as a visualization c
 - __prefer-geojson__:  Location entities are automatically added to a map components that is visible for an active text element.  By default the location is represented as a marker pinned at a discrete geo-coordinate.  However, many location entities in the Wikidata knowledge graph can also be associated with GeoJSON shape files that represent the location as region using a polygon shape.  If the visualization of a location on a map using the GeoJSON defined region is preferred over a simple marker/pin this attribute is used to express that preference.
 
 The following attributes are used for the time dimension control and animation:
-- __time-dimension__:  '
+- __time-dimension__:  Set to `true` to enable the time dimension controls
 - __time-interval__:  
 - __duration__:  
 - __max-zoom__:  
@@ -325,6 +325,6 @@ Footnotes and endnotes are not part of the core Markdown syntax.  However, the v
 
 1. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1MzM1OTgwMCwtOTExNzYwMzcxLDEyNT
+eyJoaXN0b3J5IjpbMTA1NjU3NzQ5OCwtOTExNzYwMzcxLDEyNT
 A2NjE0NjhdfQ==
 -->
