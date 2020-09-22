@@ -186,11 +186,11 @@ The following attributes are used for the time dimension control and animation. 
 - __time-dimension__:  Set to `true` to enable the time dimension controls
 - __time-interval__:  String to construct the first available time and the last available time. Format: [ISO8601 Time inverval](https://en.wikipedia.org/wiki/ISO_8601#Time_intervals)
 - __duration__:  Period of time which the features will be shown on the map after their time has passed. If null, all previous times will be shown. Format: [ISO8601 Duration](https://en.wikipedia.org/wiki/ISO_8601#Durations)
-- __max-zoom__:  The maximum zoom level to use when auto-fit is enabled.
+- __max-zoom__:  The maximum zoom level to use when auto-fit is enabled.  Default=`16`
 - __date-format__:  
-- __auto-play__:   Animate the map automatically
-- __auto-fit__:  When running the animation automatically resize the viewing area to fit all active points.
-- __fps__:  Animation 
+- __auto-play__:   Animate the map automatically.  Default=`false`
+- __auto-fit__:  When running the animation automatically resize the viewing area to fit all active points.  Default=`false`
+- __fps__:  Animation speed.  Default=`1`fps
 
 ## ve-map-layer
 
@@ -325,6 +325,6 @@ Footnotes and endnotes are not part of the core Markdown syntax.  However, the v
 
 1. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjkwMTk2NTcsMTA1NjU3NzQ5OCwtOT
+eyJoaXN0b3J5IjpbLTEzNjA4ODAyMDcsMTA1NjU3NzQ5OCwtOT
 ExNzYwMzcxLDEyNTA2NjE0NjhdfQ==
 -->
