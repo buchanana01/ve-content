@@ -201,6 +201,7 @@ By default, images are presented as IIIF images providing deep zoom and panning 
 - __title__:  The title attribute is used for the image caption.  Markdown text formatting is supported in the title allowing for italicized and bold text.
 - __url__:  The URL to the source version of the image.
 - __iiif__:  Use IIIF tiled image.
+- __static__:  Use a static image rather than an image from an IIIF server.  This is the default.  For large imi 
 - __manifest__:  The URL to the IIIF presentation manifest for the image, if one exists.
 - __fit__:  This attribute defines how an image will be scaled or cropped in the image viewer window.  Possible values for this attribute are
     -  `contain`:  The replaced content is scaled to maintain its aspect ratio while fitting within the element's content box
@@ -310,5 +311,5 @@ Footnotes and endnotes are not part of the core Markdown syntax.  However, the v
 
 1. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwMjgyMjAzMl19
+eyJoaXN0b3J5IjpbMTQwMDM4MzgyOV19
 -->
