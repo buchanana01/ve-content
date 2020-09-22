@@ -198,13 +198,43 @@ The following attributes control marker and geojson formatting:
 
 - __marker-style__:  `circle` or `pin` - default = `pin`
 - __radius__:  Marker radius when `marker-style` is set to `circle`.  Default=`4`
+- const  faIcon = iconMap[props['marker-symbol']] || props['marker-symbol'] || 'circle'
+
+return  L.marker(latlng, {
+
+icon:  L.icon.fontAwesome({
+
+iconClasses:  `fa fa-${faIcon}`, // you _could_ add other icon classes, not tested.
+
+markerColor:  props['marker-color'] || props['fill'] || '#2C84CB',
+
+markerFillOpacity:  props['opacity'] || 1,
+
+markerStrokeColor:  props['stroke'] || props['marker-color']|| props['fill'] || '#2C84CB',
+
+markerStrokeWidth:  props['stroke-width'] || 0,
+
+iconColor:  props['marker-symbol-color'] || '#FFF',
+
+iconXOffset:  props['marker-symbol-xoffset'] || 0,
+
+iconYOffset:  props['marker-symbol-yoffset'] || 0,
+- ____: 
+- ____: 
+- ____: 
+- ____: 
+- ____: 
+- ____: 
+- ____: 
+- ____: 
+
 - __stroke__:  
 - __stroke-width__:  
 - __stroke-opacity__:  
+- __fill__:  
+- __fill-opacity__:  
 - __stroke__:  
-- __stroke__:  
-- __stroke__:  
-
+- ____: 
 
 ## ve-map-layer
 
@@ -339,6 +369,6 @@ Footnotes and endnotes are not part of the core Markdown syntax.  However, the v
 
 1. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyNzE4MjEzMCwxMDU2NTc3NDk4LC05MT
-E3NjAzNzEsMTI1MDY2MTQ2OF19
+eyJoaXN0b3J5IjpbLTEwODcxOTE3OTgsMTA1NjU3NzQ5OCwtOT
+ExNzYwMzcxLDEyNTA2NjE0NjhdfQ==
 -->
