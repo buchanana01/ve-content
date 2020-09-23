@@ -211,6 +211,9 @@ The following attributes control marker and geojson formatting:
 - __fill__:  Fill color.  Default=`#32C125`
 - __fill-opacity__:  Default=`0.5`
 
+### ve-map actions
+
+- __zoo
 ## ve-map-layer
 
 The map shown for an active element can be augmented with one or more layers.  Two types of layers are currently supported.
@@ -344,6 +347,6 @@ Footnotes and endnotes are not part of the core Markdown syntax.  However, the v
 
 1. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwNTYwOTg0MCwxMDU2NTc3NDk4LC05MT
-E3NjAzNzEsMTI1MDY2MTQ2OF19
+eyJoaXN0b3J5IjpbMTQyOTI3NzMxMywtNTA1NjA5ODQwLDEwNT
+Y1Nzc0OTgsLTkxMTc2MDM3MSwxMjUwNjYxNDY4XX0=
 -->
