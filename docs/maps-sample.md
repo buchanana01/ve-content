@@ -52,7 +52,7 @@ is specified in a separate `ve-map-layer` tag with a `url` attribute containing 
 
 ## Using external GeoJSON map layer with time dimension 
 
-For GeoJSON data that is time tagged a time dimension extension is available for filtering and animatating location data based on date/time.  The time dimension control is activated by including the `time-dimension` attribute in the `ve-map` tag.  The time dimension control can configured using a number of optional attributes.  The supported attributes can be seen on the [help](/help) page.
+For GeoJSON data that is time tagged a time dimension extension is available for filtering and animatating location data based on date/time.  The time dimension control is activated by including the `time-dimension` attribute in the `ve-map` tag.  The time dimension control can configured using a number of optional attributes.  The supported attributes can be seen on the [help](/help#ve-map) page.
 <param ve-map 
        time-dimension
        time-interval="-008000/"
