@@ -252,7 +252,7 @@ By default, images are presented as IIIF images providing deep zoom and panning 
 
 ### ve-image actions
 
-- __zoomto__:  The `zoomto` action takes a comma-delimited value consisting of the coordinate region.  
+- __zoomto__:  The `zoomto` action takes a comma-delimited value defining the image region to be displayed in the viewer.  The value is the same as defined in
 Below are example `flyto` actions for Rome, one for a `click` event and another for a `mouseover` (hover) event:  
 ```html 
 	<span data-click-map-flyto="41.893,12.483,11">Rome</span>
@@ -380,6 +380,6 @@ A `zoomto` action for a `ve-image` component triggered by a user mouseover (hove
 
 1. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyNjIyNjc2MywtNTA1NjA5ODQwLDEwNT
-Y1Nzc0OTgsLTkxMTc2MDM3MSwxMjUwNjYxNDY4XX0=
+eyJoaXN0b3J5IjpbLTE3MTczODExOTgsLTUwNTYwOTg0MCwxMD
+U2NTc3NDk4LC05MTE3NjAzNzEsMTI1MDY2MTQ2OF19
 -->
