@@ -61,12 +61,6 @@ is specified in a separate `ve-map-layer` tag with a `url` attribute containing 
 
 ## Using external GeoJSON map layer with time dimension 
 
-For GeoJSON data that is time tagged a time dimension extension is available for filtering and animatating location data based on date/time.  The time dimension control is activated by including the `time-dimension` attribute in the `ve-map` tag.  The time dimension control can configured using a number of optional attributes.  The supported attributes can be see
-<param ve-map>
-<param ve-map-layer url="/geojson/cities.json">
-
-## Using external GeoJSON map layer with time dimension 
-
 One or more external GeoJSON files can be used as map layers.  Each file
 is specified in a separate `ve-map-layer` tag with a `url` attribute containing the location onf the [help](/help) pagfile.
 <param ve-map 
@@ -93,5 +87,6 @@ This map of the county of Kent in the UK uses the standard OSM basemap overlaid 
 `flyto` actions can be used in the essay text to trigger an update in the map viewer.  The action is triggered by a user mouse click or hover interaction with text that is "wrapped" with an HTML `span` tag defining the action.  This paragraph used a map of <span data-mouseover-map-flyto="43,12.3,6">Italy</span> and includes actions causing the map to flyto <span data-click-map-flyto="41.893,12.483,10" data-mouseover-map-flyto="41.893,12.483,11">Rome</span> or <span data-mouseover-map-flyto="45.440, 12.332, 13">Venice</span> when the mouse hovers over the text.
 <param ve-map center="43,12.3" zoom="6">
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODkwNzM5ODQwLDEwODExNTU4MjhdfQ==
+eyJoaXN0b3J5IjpbLTQ5NTY4MzkxMCw4OTA3Mzk4NDAsMTA4MT
+E1NTgyOF19
 -->
