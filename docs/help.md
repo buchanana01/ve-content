@@ -214,7 +214,7 @@ The following attributes control marker and geojson formatting:
 ### ve-map actions
 
 - __zoomto__:  The `zoomto` action takes a comma-delimited value consisting latitude, longitude, and zoom level.  
-Below is an exa
+Below is an example `zoomto` action for Rome
 ## ve-map-layer
 
 The map shown for an active element can be augmented with one or more layers.  Two types of layers are currently supported.
@@ -348,6 +348,6 @@ Footnotes and endnotes are not part of the core Markdown syntax.  However, the v
 
 1. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODM4MzE1NTY1LC01MDU2MDk4NDAsMTA1Nj
-U3NzQ5OCwtOTExNzYwMzcxLDEyNTA2NjE0NjhdfQ==
+eyJoaXN0b3J5IjpbLTE4MTY2NzIzOTMsLTUwNTYwOTg0MCwxMD
+U2NTc3NDk4LC05MTE3NjAzNzEsMTI1MDY2MTQ2OF19
 -->
