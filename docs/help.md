@@ -329,7 +329,10 @@ Text snippets in the essay can be used to trigger actions in some visualization 
 
 Example actions:
 
-A `zoomto
+A `zoomto` action for a `ve-map` component triggered by a user mouse click.  
+```html
+	<span data-clic
+```
 
 ## Viewing essay markdown text
 
@@ -364,6 +367,6 @@ A `zoomto
 
 1. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3NDMzMDAwLC01MDU2MDk4NDAsMTA1Nj
+eyJoaXN0b3J5IjpbNDYwMjE4ODI1LC01MDU2MDk4NDAsMTA1Nj
 U3NzQ5OCwtOTExNzYwMzcxLDEyNTA2NjE0NjhdfQ==
 -->
