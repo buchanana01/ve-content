@@ -250,6 +250,14 @@ By default, images are presented as IIIF images providing deep zoom and panning 
  - __region__: The region attribute is used to show a cropped region of the image in the image viewer.  The entire image is loaded and can be seen by zooming and panning but the initial display will only include the specified region.  The value for a region is a comma separated sequence of 4 integers representing the origin, width and height.  The origin includes both the x and y coordinates relative to the top left of the image.  The region may be expressed as absolute pixel values or as percentages of the relative values.  More information on IIIF regions can be found at [https://iiif.io/api/image/2.0/#region](https://iiif.io/api/image/2.0/#region)
  - __attribution__:  An attribution statement to associate with the image.
 
+### ve-image actions
+
+- __zoomto__:  The `zoomto` action takes a comma-delimited value consisting of the coordinate region.  
+Below are example `flyto` actions for Rome, one for a `click` event and another for a `mouseover` (hover) event:  
+```html 
+	<span data-click-map-flyto="41.893,12.483,11">Rome</span>
+	<span data-mouseover-map-flyto="41.893,12.483,11">Rome</span>
+```
 
 ## ve-video
 
@@ -273,7 +281,7 @@ Displays a high resolution image for a plant type specimen retrieved from the [G
  
 ## ve-storiiies
 
-Displays an IIIF annotated image.  This component is being deprecated as support for the use of image annotations is now provided in the `ve-image` component.  This component should not be used
+Displays an IIIF annotated image.  This component is being deprecated as support for the use of image annotations is now provided in the `ve-image` component.  This component should not be used.
 
 ### ve-storiiies attributes
 
@@ -372,6 +380,6 @@ A `zoomto` action for a `ve-image` component triggered by a user mouseover (hove
 
 1. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI4MjU2Nzc0LC01MDU2MDk4NDAsMTA1Nj
-U3NzQ5OCwtOTExNzYwMzcxLDEyNTA2NjE0NjhdfQ==
+eyJoaXN0b3J5IjpbLTMyNjIyNjc2MywtNTA1NjA5ODQwLDEwNT
+Y1Nzc0OTgsLTkxMTc2MDM3MSwxMjUwNjYxNDY4XX0=
 -->
