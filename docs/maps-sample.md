@@ -1,15 +1,8 @@
 <param ve-config
        title="Map samples"
-       banner=""
+       banner="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/WorldMap-A_with_Frame.png/1024px-WorldMap-A_with_Frame.png"
        layout="vtl"
        author="JSTOR Labs team">
-
-<param ve-component 
-       name="mapViewer"
-       src="/components/LeafletTimeDimension.vue"
-       selectors="tag:map"
-       icon="fa-map-marker-alt"
-       label="Maps">
 
 ## Introduction
 
@@ -17,7 +10,7 @@ This sample essay provides examples showing how maps can be incorporated into an
 
 ## The simplest possible map
 
-The most basic map tag is `<param ve-map>`.  Inserting this tag into an essay will result in a map at the default location and zoom level using the standard base map.  The map center defaults to `25` (latitude) and `0` (longitude).  The zoom level defaults to `2.5`.  The standard base map is `OpenStreetMap`. This paragraph also has a <span data-click-map-flyto="41.893,12.483,10" data-mouseover-map-flyto="41.893,12.483,11">flyto Rome</span> interaction. Or, <span data-mouseover-map-flyto="45.440, 12.332, 13">goto Venice</span>
+The most basic map tag is `<param ve-map>`.  Inserting this tag into an essay will result in a map at the default location and zoom level using the standard base map.  The map center defaults to `25` (latitude) and `0` (longitude).  The zoom level defaults to `2.5`.  The standard base map is `OpenStreetMap`.
 <param ve-map>
 
 ## A map with custom center and zoom
@@ -36,11 +29,11 @@ In this example we're again using Rome as the center point.  We've also added an
 <param ve-entity eid="Q220">
 <param ve-map center="Q220" zoom="10">
 
-## A map with a marker and labels opened on map display 
+## A map with a circle marker and labels opened on map display 
 
 The default behavior is to display location labels only when the mouse hovers over the marker.  If the `show-labels` attribute is addded to the `ve-map` tag labels will be automatically displayed when the map is opened.
 <param ve-entity eid="Q220">
-<param ve-map center="Q220" zoom="10" show-labels>
+<param ve-map center="Q220" zoom="10" show-labels marker-type="circle" radius="8">
 
 ## Displaying GeoJSON shapes instead of markers 
 
@@ -53,14 +46,13 @@ used for Rome on the map instead of a marker.
 ## Using external GeoJSON map layer 
 
 One or more external GeoJSON files can be used as map layers.  Each file
-is specified in a separate `ve-map-layer` tag with a `url` attribute containing the location of the file.
+is specified in a separate `ve-map-layer` tag with a `url` attribute containing the location of the file.  In this example markers are displayed for the 100 largest cities in the world based on population data obtained from Wikidata.
 <param ve-map>
 <param ve-map-layer url="/geojson/cities.json">
 
 ## Using external GeoJSON map layer with time dimension 
 
-One or more external GeoJSON files can be used as map layers.  Each file
-is specified in a separate `ve-map-layer` tag with a `url` attribute containing the location of the file.
+For GeoJSON data that is time tagged a time dimension extension is available for filtering and animatating location data based on date/time.  The time dimension control is activated by including the `time-dimension` attribute in the `ve-map` tag.  The time dimension control can configured using a number of optional attributes.  The supported attributes can be seen on the [help](/help) page.
 <param ve-map 
        time-dimension
        time-interval="-008000/"
@@ -79,3 +71,8 @@ This map of the county of Kent in the UK uses the standard OSM basemap overlaid 
 
 <param ve-map center="51.254, 0.876" zoom="10">
 <param ve-map-layer active mapwarper mapwarper-id="44832" title="Kent Topo Survey 1860">
+
+## Map with flyto actions in essay text
+
+`flyto` actions can be used in the essay text to trigger an update in the map viewer.  The action is triggered by a user mouse click or hover interaction with text that is "wrapped" with an HTML `span` tag defining the action.  This paragraph used a map of <span data-mouseover-map-flyto="43,12.3,6">Italy</span> and includes actions causing the map to flyto <span data-click-map-flyto="41.893,12.483,10" data-mouseover-map-flyto="41.893,12.483,11">Rome</span> or <span data-mouseover-map-flyto="45.440, 12.332, 13">Venice</span> when the mouse hovers over the text.
+<param ve-map center="43,12.3" zoom="6">
