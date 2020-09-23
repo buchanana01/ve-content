@@ -321,11 +321,15 @@ Footnotes and endnotes are not part of the core Markdown syntax.  However, the v
 
 ## Essay actions
 
-Text snippets in the essay can be used to trigger actions in some visualization components.  For example, a mention of a location in the essay text can be used as the trigger causing the map component to "fly" to the location.  Actions are triggered by mouse click or hover interactions with the text snippet.  The action trigger is created using an HTML `span` tag to wrap the trigger text.  A data attribute is used in the span tag to define the action to be taken and an applicable value.  The general form of the action trigger is `data-<EVENT>-<TARGET>-<ACTION>="<VALUE>"`.  
+Text snippets in the essay can be used to trigger actions in some visualization components.  For example, a mention of a location in the essay text can be used as a trigger causing the map component to "fly" to the location.  Actions are triggered by mouse click or hover interactions with the text snippet.  The action trigger is created using an HTML `span` tag to wrap the trigger text.  A data attribute is used in the span tag to define the action to be taken and an applicable value.  The general form of the action trigger is `data-<EVENT>-<TARGET>-<ACTION>="<VALUE>"`.  
 - `EVENT` - The user interaction triggering the action.  Currently this should be either `click` or `mouseover`.  
 - `TARGET` - The visualization component that should perform the action.  The value is the portion of the component tag without the `ve-` prefix.  For instance, if the action is intended for a `ve-map` component the value `map` is used.
 - `ACTION`- The specific action to be performed by the component.  The actions supported by a component are defined in the components definition in the [Visual essay directives](#visual-essay-directives) section of this help document.
-- `VALUE` - The data used by the action handler.  For instance, the `zoomto` action supported by the `ve-map` component expects a comma-delimited value with the latitude, longitude, and zoom level 
+- `VALUE` - The data used by the action handler.  For instance, the `zoomto` action supported by the `ve-map` component expects a comma-delimited value with location latitude, longitude, and zoom level.
+
+Example actions:
+
+A `zoomto
 
 ## Viewing essay markdown text
 
@@ -360,6 +364,6 @@ Text snippets in the essay can be used to trigger actions in some visualization 
 
 1. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0MjUyMzc4NiwtNTA1NjA5ODQwLDEwNT
-Y1Nzc0OTgsLTkxMTc2MDM3MSwxMjUwNjYxNDY4XX0=
+eyJoaXN0b3J5IjpbMTk3NDMzMDAwLC01MDU2MDk4NDAsMTA1Nj
+U3NzQ5OCwtOTExNzYwMzcxLDEyNTA2NjE0NjhdfQ==
 -->
