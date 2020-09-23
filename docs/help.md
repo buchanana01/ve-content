@@ -214,8 +214,9 @@ The following attributes control marker and geojson formatting:
 ### ve-map actions
 
 - __zoomto__:  The `zoomto` action takes a comma-delimited value consisting latitude, longitude, and zoom level.  
-Below are example `zoomto` action for Rome:  
+Below are example `zoomto` actions for Rome, one for a `click` event and another for a `mouseover` (hover) event:  
 ```html 
+	<span data-click-map-flyto="41.893,12.483,11">Rome</span>
 	<span data-mouseover-map-flyto="41.893,12.483,11">Rome</span>
 ```
 ## ve-map-layer
@@ -351,6 +352,6 @@ Footnotes and endnotes are not part of the core Markdown syntax.  However, the v
 
 1. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjQxMzIzLC01MDU2MDk4NDAsMTA1Nj
-U3NzQ5OCwtOTExNzYwMzcxLDEyNTA2NjE0NjhdfQ==
+eyJoaXN0b3J5IjpbLTQ1MzA0NTcyMSwtNTA1NjA5ODQwLDEwNT
+Y1Nzc0OTgsLTkxMTc2MDM3MSwxMjUwNjYxNDY4XX0=
 -->
