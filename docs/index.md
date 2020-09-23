@@ -12,3 +12,7 @@ The ability to easily associate text with maps and multimedia is useful but the 
 
 - [Sample essay](/sample)
 - [Sample essay with annotated images](kent-seaside-resorts)
+- - [Map sample essay](/maps-sample)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEzNjY3OTEwOF19
+-->
