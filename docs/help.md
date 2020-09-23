@@ -257,7 +257,6 @@ By default, images are presented as IIIF images providing deep zoom and panning 
 Below is an example `zoomto` action for a `click` event:  
 ```html 
 	<span data-click-image-zoomto="100,100,1000,1000">Foo</span>
-	<span data-mouseover-map-flyto="41.893,12.483,11">Rome</span>
 ```
 
 ## ve-video
@@ -381,6 +380,6 @@ A `zoomto` action for a `ve-image` component triggered by a user mouseover (hove
 
 1. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3MzUwODIyMywtNTA1NjA5ODQwLDEwNT
-Y1Nzc0OTgsLTkxMTc2MDM3MSwxMjUwNjYxNDY4XX0=
+eyJoaXN0b3J5IjpbLTEyMTI0NjI4NTEsLTUwNTYwOTg0MCwxMD
+U2NTc3NDk4LC05MTE3NjAzNzEsMTI1MDY2MTQ2OF19
 -->
