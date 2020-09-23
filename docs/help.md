@@ -321,7 +321,7 @@ Footnotes and endnotes are not part of the core Markdown syntax.  However, the v
 
 ## Essay actions
 
-Te
+Text snippets in the essay can be used to trigger actions in some visualization components.  For example, a mention of
 ## Viewing essay markdown text
 
 ## Editing essays
@@ -355,6 +355,6 @@ Te
 
 1. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc2ODE5NzgyLC01MDU2MDk4NDAsMTA1Nj
-U3NzQ5OCwtOTExNzYwMzcxLDEyNTA2NjE0NjhdfQ==
+eyJoaXN0b3J5IjpbMTcxMTA4NjczMSwtNTA1NjA5ODQwLDEwNT
+Y1Nzc0OTgsLTkxMTc2MDM3MSwxMjUwNjYxNDY4XX0=
 -->
