@@ -331,7 +331,11 @@ Example actions:
 
 A `flyto` action for a `ve-map` component triggered by a user mouse click.  
 ```html
-	<span data-click-map-flyto=""
+	<span data-click-map-flyto="41.893,12.483,11">Rome</span>
+```
+A `zoomto` action for a `ve-image` component triggered by a user mouseover (hover).
+```html
+	<span data-click-image-zoom="41.893,12.483,11">Rome</span>
 ```
 
 ## Viewing essay markdown text
@@ -367,6 +371,6 @@ A `flyto` action for a `ve-map` component triggered by a user mouse click.
 
 1. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTQ3MjI1NjMsLTUwNTYwOTg0MCwxMD
-U2NTc3NDk4LC05MTE3NjAzNzEsMTI1MDY2MTQ2OF19
+eyJoaXN0b3J5IjpbMzI0NDg3NjEsLTUwNTYwOTg0MCwxMDU2NT
+c3NDk4LC05MTE3NjAzNzEsMTI1MDY2MTQ2OF19
 -->
