@@ -213,7 +213,7 @@ The following attributes control marker and geojson formatting:
 
 ### ve-map actions
 
-- __zoo
+- __zoomto__:  The `
 ## ve-map-layer
 
 The map shown for an active element can be augmented with one or more layers.  Two types of layers are currently supported.
@@ -347,6 +347,6 @@ Footnotes and endnotes are not part of the core Markdown syntax.  However, the v
 
 1. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyOTI3NzMxMywtNTA1NjA5ODQwLDEwNT
-Y1Nzc0OTgsLTkxMTc2MDM3MSwxMjUwNjYxNDY4XX0=
+eyJoaXN0b3J5IjpbNDg1MzI1NzgyLC01MDU2MDk4NDAsMTA1Nj
+U3NzQ5OCwtOTExNzYwMzcxLDEyNTA2NjE0NjhdfQ==
 -->
