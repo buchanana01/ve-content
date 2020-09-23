@@ -71,7 +71,7 @@ is specified in a separate `ve-map-layer` tag with a `url` attribute containing 
        max-zoom="4"
        date-format="YYYY"
        auto-play="false"
-       auto-fit="false"
+       auto-fit="true"
        fps="4">
 <param ve-map-layer url="/geojson/cities.json">
 
@@ -87,6 +87,6 @@ This map of the county of Kent in the UK uses the standard OSM basemap overlaid 
 `flyto` actions can be used in the essay text to trigger an update in the map viewer.  The action is triggered by a user mouse click or hover interaction with text that is "wrapped" with an HTML `span` tag defining the action.  This paragraph used a map of <span data-mouseover-map-flyto="43,12.3,6">Italy</span> and includes actions causing the map to flyto <span data-click-map-flyto="41.893,12.483,10" data-mouseover-map-flyto="41.893,12.483,11">Rome</span> or <span data-mouseover-map-flyto="45.440, 12.332, 13">Venice</span> when the mouse hovers over the text.
 <param ve-map center="43,12.3" zoom="6">
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5NTY4MzkxMCw4OTA3Mzk4NDAsMTA4MT
-E1NTgyOF19
+eyJoaXN0b3J5IjpbLTEyNjczMDQxNzUsLTQ5NTY4MzkxMCw4OT
+A3Mzk4NDAsMTA4MTE1NTgyOF19
 -->
