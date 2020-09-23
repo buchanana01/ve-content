@@ -273,7 +273,7 @@ Displays a high resolution image for a plant type specimen retrieved from the [G
  
 ## ve-storiiies
 
-Displays an IIIF annotated image.  This component is being deprecated a
+Displays an IIIF annotated image.  This component is being deprecated as support for the use of image annotations is now provided in the `ve-image` component.  This component should not be used
 
 ### ve-storiiies attributes
 
@@ -372,6 +372,6 @@ A `zoomto` action for a `ve-image` component triggered by a user mouseover (hove
 
 1. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4MTAzNzEzNywtNTA1NjA5ODQwLDEwNT
-Y1Nzc0OTgsLTkxMTc2MDM3MSwxMjUwNjYxNDY4XX0=
+eyJoaXN0b3J5IjpbOTI4MjU2Nzc0LC01MDU2MDk4NDAsMTA1Nj
+U3NzQ5OCwtOTExNzYwMzcxLDEyNTA2NjE0NjhdfQ==
 -->
