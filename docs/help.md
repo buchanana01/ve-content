@@ -333,10 +333,11 @@ A `flyto` action for a `ve-map` component triggered by a user mouse click.
 ```html
 	<span data-click-map-flyto="41.893,12.483,11">Rome</span>
 ```
-A `zoomto` action for a `ve-image` component triggered by a user mouseover (hover).
+A `zoomto` action for a `ve-image` component triggered by a user mouseover (hover).  In this example a mouse hover over the text `Foo` will cause the image to zoom in on the image region defined by the x,y,width,
 ```html
-	<span data-click-image-zoomto="100,100,1000,1000">a reference to an image region</span>
+	<span data-click-image-zoomto="100,100,1000,1000">Foo</span>
 ```
+
 
 ## Viewing essay markdown text
 
@@ -371,6 +372,6 @@ A `zoomto` action for a `ve-image` component triggered by a user mouseover (hove
 
 1. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODE2NDQxNDY3LC01MDU2MDk4NDAsMTA1Nj
-U3NzQ5OCwtOTExNzYwMzcxLDEyNTA2NjE0NjhdfQ==
+eyJoaXN0b3J5IjpbLTE3MjM0MDA0OTgsLTUwNTYwOTg0MCwxMD
+U2NTc3NDk4LC05MTE3NjAzNzEsMTI1MDY2MTQ2OF19
 -->
