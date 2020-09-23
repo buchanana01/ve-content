@@ -324,7 +324,7 @@ Footnotes and endnotes are not part of the core Markdown syntax.  However, the v
 Text snippets in the essay can be used to trigger actions in some visualization components.  For example, a mention of a location in the essay text can be used as the trigger causing the map component to "fly" to the location.  Actions are triggered by mouse click or hover interactions with the text snippet.  The action trigger is created using an HTML `span` tag to wrap the trigger text.  A data attribute is used in the span tag to define the action to be taken and an applicable value.  The general form of the action trigger is `data-<EVENT>-<TARGET>-<ACTION>="<VALUE>"`.  
 - `EVENT` is the user interaction triggering the action.  Currently this should be either `click` or `mouseover`.  
 - `TARGET` is the visualization component that should perform the action.  The value is the portion of the component tag without the `ve-` prefix.  For instance, if the action is intended for a `ve-map` component the value `map` is used.
-- `ACTION`is the specific action to be performed by the component.  The actions supported by a component are defined in
+- `ACTION`is the specific action to be performed by the component.  The actions supported by a component are defined in the components definition in t [Visual essay directives](#visual-essay-directives)
 
 ## Viewing essay markdown text
 
@@ -359,6 +359,6 @@ Text snippets in the essay can be used to trigger actions in some visualization 
 
 1. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5MjkwNTkxNywtNTA1NjA5ODQwLDEwNT
-Y1Nzc0OTgsLTkxMTc2MDM3MSwxMjUwNjYxNDY4XX0=
+eyJoaXN0b3J5IjpbLTE4NDIyMjc5MzQsLTUwNTYwOTg0MCwxMD
+U2NTc3NDk4LC05MTE3NjAzNzEsMTI1MDY2MTQ2OF19
 -->
