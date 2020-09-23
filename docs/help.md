@@ -319,6 +319,9 @@ Below are some examples of stand-alone essay links:
 
 Footnotes and endnotes are not part of the core Markdown syntax.  However, the visual essay Markdown processor supports a common extension that enables footnote linking in the essay text.  The syntax is `[^ref]`, where "ref" can be any string.  A pair of these footnote tags are used in the markdown text.  The first is located with the essay text to be associated with the footnote.  The second is included in an aggregated footnotes list, typically located at the end of the essay following a section heading of `References` or something equivalent. 
 
+## Essay actions
+
+Te
 ## Viewing essay markdown text
 
 ## Editing essays
@@ -352,6 +355,6 @@ Footnotes and endnotes are not part of the core Markdown syntax.  However, the v
 
 1. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1MzA0NTcyMSwtNTA1NjA5ODQwLDEwNT
-Y1Nzc0OTgsLTkxMTc2MDM3MSwxMjUwNjYxNDY4XX0=
+eyJoaXN0b3J5IjpbNzc2ODE5NzgyLC01MDU2MDk4NDAsMTA1Nj
+U3NzQ5OCwtOTExNzYwMzcxLDEyNTA2NjE0NjhdfQ==
 -->
