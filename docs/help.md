@@ -213,8 +213,8 @@ The following attributes control marker and geojson formatting:
 
 ### ve-map actions
 
-- __zoomto__:  The `zoomto` action takes a comma-delimited value consisting latitude, longitude, and zoom level.  
-Below are example `zoomto` actions for Rome, one for a `click` event and another for a `mouseover` (hover) event:  
+- __flyto__:  The `flyto` action takes a comma-delimited value consisting latitude, longitude, and zoom level.  
+Below are example `flyto` actions for Rome, one for a `click` event and another for a `mouseover` (hover) event:  
 ```html 
 	<span data-click-map-flyto="41.893,12.483,11">Rome</span>
 	<span data-mouseover-map-flyto="41.893,12.483,11">Rome</span>
@@ -325,13 +325,13 @@ Text snippets in the essay can be used to trigger actions in some visualization 
 - `EVENT` - The user interaction triggering the action.  Currently this should be either `click` or `mouseover`.  
 - `TARGET` - The visualization component that should perform the action.  The value is the portion of the component tag without the `ve-` prefix.  For instance, if the action is intended for a `ve-map` component the value `map` is used.
 - `ACTION`- The specific action to be performed by the component.  The actions supported by a component are defined in the components definition in the [Visual essay directives](#visual-essay-directives) section of this help document.
-- `VALUE` - The data used by the action handler.  For instance, the `zoomto` action supported by the `ve-map` component expects a comma-delimited value with location latitude, longitude, and zoom level.
+- `VALUE` - The data used by the action handler.  For instance, the `flyto` action supported by the `ve-map` component expects a comma-delimited value with location latitude, longitude, and zoom level.
 
 Example actions:
 
-A `zoomto` action for a `ve-map` component triggered by a user mouse click.  
+A `flyto` action for a `ve-map` component triggered by a user mouse click.  
 ```html
-	<span data-clic
+	<span data-click-map-flyto=""
 ```
 
 ## Viewing essay markdown text
@@ -367,6 +367,6 @@ A `zoomto` action for a `ve-map` component triggered by a user mouse click.
 
 1. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDYwMjE4ODI1LC01MDU2MDk4NDAsMTA1Nj
-U3NzQ5OCwtOTExNzYwMzcxLDEyNTA2NjE0NjhdfQ==
+eyJoaXN0b3J5IjpbLTEzNTQ3MjI1NjMsLTUwNTYwOTg0MCwxMD
+U2NTc3NDk4LC05MTE3NjAzNzEsMTI1MDY2MTQ2OF19
 -->
