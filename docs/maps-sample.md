@@ -1,6 +1,6 @@
 <param ve-config
        title="Map samples"
-       banner="https://upload.wikimedia.org/wikipedia/"
+       banner="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/WorldMap-A_with_Frame.png/1024px-WorldMap-A_with_Frame.png"
        layout="vtl"
        author="JSTOR Labs team">
 
