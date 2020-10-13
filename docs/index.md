@@ -1,6 +1,10 @@
 <a href="https://visual-essays.app"><img src="images/ve-button.png"></a>
 
-<param ve-config title="Visual Essays"author="Ron" banner="/images/header.jpg">
+<param ve-config 
+       title="Visual Essays"
+       author="Ron"
+       style="plain"
+       banner="/images/header.jpg">
 
 # Visual Essays
 
@@ -13,6 +17,3 @@ The ability to easily associate text with maps and multimedia is useful but the 
 - [Sample essay](/sample)
 - [Sample essay with annotated images](kent-seaside-resorts)
 - [Map samples essay](/maps-sample)
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwNTE1MjE1Ml19
--->

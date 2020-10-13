@@ -2,5 +2,10 @@
     "title": "Visual Essays",
     "banner": "/images/header.jpg",
     "bannerHeight": 400,
-    "mdRoot": "/docs"
+    "mdRoot": "/docs",
+    "nav": [
+        {"label": "Home", "icon": "home-alt", "path": "/"},
+        {"label": "About", "icon": "info", "path": "/about"},
+        {"label": "Help", "icon": "question", "path": "/help"}
+    ]
 }
