@@ -1,7 +1,7 @@
 <param ve-config
        title="Cherry Blossom demo essay"
        banner="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Cherry20190331105300.jpg/1024px-Cherry20190331105300.jpg"
-       layout="verticatl"
+       layout="vertical"
        author="JSTOR Labs team">
 
 <param title="Beatrix Farrand" eid="Q437714">
