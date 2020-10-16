@@ -5,7 +5,7 @@
   "partOf": {
     "id": "http://visual-essays.app/annotations/?include=description&target=https://visual-essays.app/jstor-labs/ve-content/sample/bb09ba3c",
     "total": 8,
-    "modified": "2020-10-16T19:06:22.756028"
+    "modified": "2020-10-16T19:07:25.845490"
   },
   "startIndex": 0,
   "items": [
@@ -161,7 +161,7 @@
       "body": [
         {
           "type": "TextualBody",
-          "value": "flower test",
+          "value": "flower test update",
           "purpose": "commenting"
         }
       ],
