@@ -4,8 +4,8 @@
   "type": "AnnotationPage",
   "partOf": {
     "id": "http://visual-essays.app/annotations/?include=description&target=https://visual-essays.app/jstor-labs/ve-content/sample/bb09ba3c",
-    "total": 7,
-    "modified": "2020-10-16T18:55:45.025607"
+    "total": 8,
+    "modified": "2020-10-16T19:06:22.756028"
   },
   "startIndex": 0,
   "items": [
@@ -155,6 +155,27 @@
       "@context": "http://www.w3.org/ns/anno.jsonld",
       "id": "https://visual-essays.app/jstor-labs--ve-content--sample--bb09ba3c--5afd0d01",
       "seq": 6
+    },
+    {
+      "type": "Annotation",
+      "body": [
+        {
+          "type": "TextualBody",
+          "value": "flower test",
+          "purpose": "commenting"
+        }
+      ],
+      "target": {
+        "selector": {
+          "type": "FragmentSelector",
+          "conformsTo": "http://www.w3.org/TR/media-frags/",
+          "value": "xywh=pixel:1729.6343994140625,1501.6141357421875,479.0623779296875,365.945556640625"
+        },
+        "id": "https://visual-essays.app/jstor-labs/ve-content/sample/bb09ba3c"
+      },
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "id": "https://visual-essays.app/jstor-labs--ve-content--sample--bb09ba3c--39497a36",
+      "seq": 7
     }
   ]
 }
