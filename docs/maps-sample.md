@@ -13,21 +13,6 @@
        icon="fa-map-marker-alt"
        label="Maps">
 
-## US States Entry
-
-For GeoJSON data that is time tagged a time dimension extension is available for filtering and animatating location data based on date/time.  The time dimension control is activated by including the `time-dimension` attribute in the `ve-map` tag.  The time dimension control can configured using a number of optional attributes.  The supported attributes can be seen on the [help](/help#ve-map) page.
-<param ve-map 
-       center="39.833333, -98.583333"
-       zoom="4"
-       time-dimension
-       time-interval="-008000/"
-       duration="P10000Y"
-       basemap="Esri_WorldGrayCanvas"
-       max-zoom="4"
-       date-format="YYYY"
-       fps="4">
-<param ve-map-layer url="/geojson/us-states.json">
-
 ## Introduction
 
 This sample essay provides examples showing how maps can be incorporated into an essay.  Various features are used in the examples.
@@ -100,3 +85,18 @@ This map of the county of Kent in the UK uses the standard OSM basemap overlaid 
 
 `flyto` actions can be used in the essay text to trigger an update in the map viewer.  The action is triggered by a user mouse click or hover interaction with text that is "wrapped" with an HTML `span` tag defining the action.  This paragraph used a map of <span data-mouseover-map-flyto="43,12.3,6">Italy</span> and includes actions causing the map to flyto <span data-click-map-flyto="41.893,12.483,10" data-mouseover-map-flyto="41.893,12.483,11">Rome</span> or <span data-mouseover-map-flyto="45.440, 12.332, 13">Venice</span> when the mouse hovers over the text.
 <param ve-map center="43,12.3" zoom="6">
+
+## US States Entry
+
+For GeoJSON data that is time tagged a time dimension extension is available for filtering and animatating location data based on date/time.  The time dimension control is activated by including the `time-dimension` attribute in the `ve-map` tag.  The time dimension control can configured using a number of optional attributes.  The supported attributes can be seen on the [help](/help#ve-map) page.
+<param ve-map 
+       center="39.833333, -98.583333"
+       zoom="4"
+       time-dimension
+       time-interval="-008000/"
+       duration="P10000Y"
+       basemap="Esri_WorldGrayCanvas"
+       max-zoom="4"
+       date-format="YYYY"
+       fps="4">
+<param ve-map-layer url="/geojson/us-states.json">
