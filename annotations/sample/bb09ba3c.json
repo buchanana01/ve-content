@@ -1,0 +1,223 @@
+{
+  "@context": "http://www.w3.org/ns/anno.jsonld",
+  "id": "http://visual-essays.app/annotations/?include=description&target=https://visual-essays.app/jstor-labs/ve-content/sample/bb09ba3c",
+  "type": "AnnotationPage",
+  "partOf": {
+    "id": "http://visual-essays.app/annotations/?include=description&target=https://visual-essays.app/jstor-labs/ve-content/sample/bb09ba3c",
+    "total": 10,
+    "modified": "2020-10-16T19:29:41.164719"
+  },
+  "startIndex": 0,
+  "items": [
+    {
+      "type": "Annotation",
+      "body": [
+        {
+          "type": "TextualBody",
+          "value": "blossom",
+          "purpose": "commenting"
+        }
+      ],
+      "target": {
+        "selector": {
+          "type": "FragmentSelector",
+          "conformsTo": "http://www.w3.org/TR/media-frags/",
+          "value": "xywh=pixel:1729.9268798828125,1160.5838623046875,576.6422119140625,397.8101806640625"
+        },
+        "id": "https://visual-essays.app/jstor-labs/ve-content/sample/bb09ba3c"
+      },
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "id": "https://visual-essays.app/jstor-labs--ve-content--sample--bb09ba3c--b2c9c5a9",
+      "seq": 0
+    },
+    {
+      "type": "Annotation",
+      "body": [
+        {
+          "type": "TextualBody",
+          "value": "test",
+          "purpose": "commenting"
+        }
+      ],
+      "target": {
+        "selector": {
+          "type": "FragmentSelector",
+          "conformsTo": "http://www.w3.org/TR/media-frags/",
+          "value": "xywh=pixel:1566.858154296875,2021.864501953125,818.598388671875,537.00048828125"
+        },
+        "id": "https://visual-essays.app/jstor-labs/ve-content/sample/bb09ba3c"
+      },
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "id": "https://visual-essays.app/jstor-labs--ve-content--sample--bb09ba3c--6f7c9524",
+      "seq": 1
+    },
+    {
+      "type": "Annotation",
+      "body": [
+        {
+          "type": "TextualBody",
+          "value": "test",
+          "purpose": "commenting"
+        }
+      ],
+      "target": {
+        "selector": {
+          "type": "FragmentSelector",
+          "conformsTo": "http://www.w3.org/TR/media-frags/",
+          "value": "xywh=pixel:1025.5401611328125,957.7603149414062,1123.7720947265625,671.9057006835938"
+        },
+        "id": "https://visual-essays.app/jstor-labs/ve-content/sample/bb09ba3c"
+      },
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "id": "https://visual-essays.app/jstor-labs--ve-content--sample--bb09ba3c--96dbe538",
+      "seq": 2
+    },
+    {
+      "type": "Annotation",
+      "body": [
+        {
+          "type": "TextualBody",
+          "value": "Branch updated",
+          "purpose": "commenting"
+        }
+      ],
+      "target": {
+        "selector": {
+          "type": "FragmentSelector",
+          "conformsTo": "http://www.w3.org/TR/media-frags/",
+          "value": "xywh=pixel:3167.12109375,2139.197021484375,372.310791015625,188.453857421875"
+        },
+        "id": "https://visual-essays.app/jstor-labs/ve-content/sample/bb09ba3c"
+      },
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "id": "https://visual-essays.app/jstor-labs--ve-content--sample--bb09ba3c--db74b0c7",
+      "seq": 3
+    },
+    {
+      "type": "Annotation",
+      "body": [
+        {
+          "type": "TextualBody",
+          "value": "flower",
+          "purpose": "commenting"
+        }
+      ],
+      "target": {
+        "selector": {
+          "type": "FragmentSelector",
+          "conformsTo": "http://www.w3.org/TR/media-frags/",
+          "value": "xywh=pixel:2268.483154296875,1326.2353515625,253.333251953125,293.3333740234375"
+        },
+        "id": "https://visual-essays.app/jstor-labs/ve-content/sample/bb09ba3c"
+      },
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "id": "https://visual-essays.app/jstor-labs--ve-content--sample--bb09ba3c--96a23b79",
+      "seq": 4
+    },
+    {
+      "type": "Annotation",
+      "body": [
+        {
+          "type": "TextualBody",
+          "value": "hello update",
+          "purpose": "commenting"
+        }
+      ],
+      "target": {
+        "selector": {
+          "type": "FragmentSelector",
+          "conformsTo": "http://www.w3.org/TR/media-frags/",
+          "value": "xywh=pixel:1356,869,228,408"
+        },
+        "id": "https://visual-essays.app/jstor-labs/ve-content/sample/bb09ba3c"
+      },
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "id": "https://visual-essays.app/jstor-labs--ve-content--sample--bb09ba3c--b1303a4b",
+      "seq": 5
+    },
+    {
+      "type": "Annotation",
+      "body": [
+        {
+          "type": "TextualBody",
+          "value": "test update",
+          "purpose": "commenting"
+        }
+      ],
+      "target": {
+        "selector": {
+          "type": "FragmentSelector",
+          "conformsTo": "http://www.w3.org/TR/media-frags/",
+          "value": "xywh=pixel:1601.38037109375,1323.5701904296875,268.1099853515625,326.8759765625"
+        },
+        "id": "https://visual-essays.app/jstor-labs/ve-content/sample/bb09ba3c"
+      },
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "id": "https://visual-essays.app/jstor-labs--ve-content--sample--bb09ba3c--5afd0d01",
+      "seq": 6
+    },
+    {
+      "type": "Annotation",
+      "body": [
+        {
+          "type": "TextualBody",
+          "value": "flower test update",
+          "purpose": "commenting"
+        }
+      ],
+      "target": {
+        "selector": {
+          "type": "FragmentSelector",
+          "conformsTo": "http://www.w3.org/TR/media-frags/",
+          "value": "xywh=pixel:1729.6343994140625,1501.6141357421875,479.0623779296875,365.945556640625"
+        },
+        "id": "https://visual-essays.app/jstor-labs/ve-content/sample/bb09ba3c"
+      },
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "id": "https://visual-essays.app/jstor-labs--ve-content--sample--bb09ba3c--39497a36",
+      "seq": 7
+    },
+    {
+      "type": "Annotation",
+      "body": [
+        {
+          "type": "TextualBody",
+          "value": "test",
+          "purpose": "commenting"
+        }
+      ],
+      "target": {
+        "selector": {
+          "type": "FragmentSelector",
+          "conformsTo": "http://www.w3.org/TR/media-frags/",
+          "value": "xywh=pixel:1652.0552978515625,1277.816650390625,286.2244873046875,364.8365478515625"
+        },
+        "id": "https://visual-essays.app/jstor-labs/ve-content/sample/bb09ba3c"
+      },
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "id": "https://visual-essays.app/jstor-labs--ve-content--sample--bb09ba3c--5dedce7b",
+      "seq": 8
+    },
+    {
+      "type": "Annotation",
+      "body": [
+        {
+          "type": "TextualBody",
+          "value": "test",
+          "purpose": "commenting"
+        }
+      ],
+      "target": {
+        "selector": {
+          "type": "FragmentSelector",
+          "conformsTo": "http://www.w3.org/TR/media-frags/",
+          "value": "xywh=pixel:614.2577514648438,1029.8204345703125,139.294189453125,129.7635498046875"
+        },
+        "id": "https://visual-essays.app/jstor-labs/ve-content/sample/bb09ba3c"
+      },
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "id": "https://visual-essays.app/jstor-labs--ve-content--sample--bb09ba3c--cbbe06b8",
+      "seq": 9
+    }
+  ]
+}

@@ -17,6 +17,9 @@
 <param title="Washington, D. C." eid="Q61" fill="green" marker-symbol="landmark">
 
 Cherry blossoms have formed an integral part of the identity of Washington, D. C., ever since Japan gifted over three thousand cherry trees to the United States in 1912 as a symbol of friendship and political alliance. Until the final decades of the 19th century, Japanese cherry trees had often been misunderstood among Westerners, and garnered only modest attention in Europe. Subsequent European involvement in East Asia forced Japan, which had pursued a strict isolationist policy for centuries, to open its borders.  As a result, Europeans enjoyed greater contact with Japanese culture, and a growing interest in cherry blossoms. With the planting of Japan’s gift of cherry trees in the <span eid="Q956781">Tidal Basin</span>, cherry blossoms became accessible to the American public, entering Western consciousness on an unprecedented scale. 
+<param ve-vis-network file="/data/heliconia.tsv">
+
+Cherry blossoms have formed an integral part of the identity of Washington, D. C., ever since Japan gifted over three thousand cherry trees to the United States in 1912 as a symbol of friendship and political alliance. Until the final decades of the 19th century, Japanese cherry trees had often been misunderstood among Westerners, and garnered only modest attention in Europe. Subsequent European involvement in East Asia forced Japan, which had pursued a strict isolationist policy for centuries, to open its borders.  As a result, Europeans enjoyed greater contact with Japanese culture, and a growing interest in cherry blossoms. With the planting of Japan’s gift of cherry trees in the <span eid="Q956781">Tidal Basin</span>, cherry blossoms became accessible to the American public, entering Western consciousness on an unprecedented scale.
 <param ve-image iiif
        primary
        title="Tidal basin cherry blossom"
@@ -93,3 +96,6 @@ The National Cherry Festival[^ncf] is a festival in Traverse City, Michigan. It 
 [^cpm]: [en.wikipedia.org/wiki/Cherry_production_in_Michigan](https://en.wikipedia.org/wiki/Cherry_production_in_Michigan)
 [^ncf]: [en.wikipedia.org/wiki/National_Cherry_Festival](https://en.wikipedia.org/wiki/National_Cherry_Festival)
 [^wa]: [Cherry production by country according to the World Atlas](https://www.worldatlas.com/articles/the-world-leaders-in-cherry-production.html)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTExMDgyNjY4NDddfQ==
+-->
