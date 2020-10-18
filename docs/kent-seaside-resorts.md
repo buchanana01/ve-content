@@ -16,7 +16,7 @@
 
 As the fashionable ‘water cure’ of spas such as Bath and Tunbridge Wells moved coastwards in the late eighteenth and nineteenth centuries, so a number of obscure fishing villages reinvented themselves as seaside resorts. Kent was an obvious beneficiary of this trend, with Gravesend in the Medway area and no fewer than seven resorts along the East coast: while Whitstable and Herne Bay never offered serious competition to the Sussex resorts of Brighton and Eastbourne, visitors were drawn in large numbers to [Broadstairs](#broadstairs), [Ramsgate](#ramsgate) and [Margate](#margate) in Thanet, and to [Folkestone](#folkestone) and [Dover](#19c-dover) in Sheppey. 
 <param ve-map center="51.238943, 1.251498" zoom="10.5" basemap="Esri_NatGeoWorldMap">
-<param ve-image
+<param ve-image iiif
        url="https://upload.wikimedia.org/wikipedia/commons/8/86/Beach_and_ladies%27_bathing_place%2C_Margate%2C_England-LCCN2002697068.jpg"
        title="Beach and ladies' bathing place, Margate, England"
        date="1890"
@@ -25,20 +25,20 @@ As the fashionable ‘water cure’ of spas such as Bath and Tunbridge Wells mov
        fit="cover">
 
 Women of all ages benefited from the greater freedom and healthier lifestyle of the seaside holiday. Princess Victoria spent three months in Broadstairs in 1829 and stayed in Ramsgate in 1835. Another teenage girl, Emily Shore, kept a journal of her visit to Thanet in the summer of 1831. Like Anna Maria Hussey, who holidayed in Dover in 1836, Emily made the trip by steamboat.
-<param ve-image 
+<param ve-image iiif
        url="https://upload.wikimedia.org/wikipedia/commons/e/ea/Queen_Victoria_-_Princess_Victoria_in_1836.png"
        title="Princess Victoria in 1836"
        date="1836"
        description="PRINCESS VICTORIA IN 1836. From the Portrait by F. Winterhalter."
        attribution="https://commons.wikimedia.org/wiki/File:Queen_Victoria_-_Princess_Victoria_in_1836.png">
-<param ve-image 
+<param ve-image iiif
        url="https://upload.wikimedia.org/wikipedia/commons/f/f7/Margaret_Emily_Shore_engraving.jpg"
        title="Margaret Emily Shore"
        description="Margaret Emily Shore after Unknown artist, engraving, late 19th century (circa 1838)"
        attribution="https://commons.wikimedia.org/wiki/File:Margaret_Emily_Shore_engraving.jpg">
 
 By the early decades of the 20th century visitors would be able to enjoy a body of holiday fiction set in the resort they were visiting: _Maggie of Margate: a Seaside Sensation,_ _The Passenger to 'Folkestone_, _The Beauty of Broadstairs_ and _A Girl of Thanet_, to name but a few.
-<param ve-image 
+<param ve-image iiif
        url="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/York_Gate%2C_Broadstairs%2C_England-LCCN2002696432.tif/lossy-page1-2758px-York_Gate%2C_Broadstairs%2C_England-LCCN2002696432.tif.jpg"
        title="York Gate, Broadstairs"
        description="York Gate, Broadstairs, England, between 1890 and 1900"
@@ -50,17 +50,17 @@ Broadstairs is a coastal town on the Isle of Thanet in the Thanet district of ea
 <param ve-map center="Q922739" zoom="12" basemap="Esri_NatGeoWorldMap">
 
 Despite being the favoured holiday destination of no less a figure than [Charles Dickens](https://kent-maps.online/dickens/dickens-biography), [Broadstairs](https://warnerbros.digitalpigeon.com/msg/CDUQoLnGEeqC8wbfE8cnCQ/VdDOxM7Jm4sxoAAhNTQ1ZQ) never aimed to compete with either the much-vaunted gentility of Ramsgate or the mass appeal of Margate. In 1831 the teengage diarist [Emily Shore](https://kent-maps.online/19c/19c-shore-biography) recorded her mother's obvious disappointment at the lack of social amenities and for most of the century it kept out less elegant tourists by the simple expedient of ‘failing to provide facilities which would attract them – no public amusements or music halls. Just a small circulating library with old-fashioned assembly room attached, calculated to attract a steady flow of quiet respectable visitors.’  One journalist commented with patronising approval in 1864 that ‘Broadstairs is a quaint old place, and its inhabitants are still very primitive.’ 
-<param ve-image 
+<param ve-image iiif
        url="https://upload.wikimedia.org/wikipedia/commons/2/2b/Broadstairs_beach_from_promenade.JPG"
        title="Broadstairs beach from promenade"
        description="Broadstairs beach from promenade, with Bleak House on hill"
        attribution="https://commons.wikimedia.org/wiki/File:Broadstairs_beach_from_promenade.JPG">
-<param ve-image
+<param ve-image iiif
        url="https://upload.wikimedia.org/wikipedia/commons/f/f9/Bay_and_jetty_Broadstairs_Kent_England.jpg"
        title="Bay and jetty Broadstairs Kent England"
        description="Viking Bay jetty from Victoria Gardens, with boats, holidaymakers, and distant wind farm at Broadstairs in Kent, England"
        attribution="https://commons.wikimedia.org/wiki/File:Bay_and_jetty_Broadstairs_Kent_England.jpg">
-<param ve-image
+<param ve-image iiif
        url="https://upload.wikimedia.org/wikipedia/commons/a/a9/Seafront_with_bathing_machines%2C_Broadstairs%2C_Kent._RMG_G02392.tiff"
        title="Seafront with bathing machines, Broadstairs, Kent."
        description="Seafront with bathing machines, Broadstairs, Kent."
@@ -99,7 +99,7 @@ Margate is a seaside town in Thanet, Kent, South East England, Europe, 15 miles 
 ## Folkestone
 
 As one 19th century wag observed, Folkestone is a near anagram of ‘Kent Fools’, a joke not lost on the unknown author (believed to be from [Dover](/dickens/19c-dover)) of [_The Folkestone Fiery Serpent._](https://books.google.co.uk/books?id=yiotAAAAYAAJ&pg=PP5&lpg=PP5&dq=folkestone+fiery+serpent+first+published&source=bl&ots=FC3-gil3xI&sig=NR_HmDFGyrVpUf5psT-vvLgvK8k&hl=en&sa=X&ved=0CCEQ6AEwAGoVChMI9I2TlPmmxwIVsgjbCh146QCT#v=onepage&q=folkestone%20fiery%20serpent%20first%20published&f=false')  While the townspeople in this comic poem are unable to tell the difference between a dragon and a peacock, their real life counterparts were more astute in their promotion of the town.
-<param ve-image manifest="https://kent-map.github.io/kent/manifests/folkestone.json">
+<param ve-image iiif manifest="https://kent-map.github.io/kent/manifests/folkestone.json">
 
 ## Dover
 
