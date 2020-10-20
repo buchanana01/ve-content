@@ -4,13 +4,6 @@
        layout="vtl"
        iiif-service="iiifhosting">
 
-<param ve-component 
-       name="mapViewer"
-       src="/components/LeafletTimeDimension.vue"
-       selectors="tag:map"
-       icon="fa-map-marker-alt"
-       label="Maps">
-
 <param eid="Q188617" title="Kew Gardens">
 <param eid="Q3492" title="Sumatra">
 <param eid="Q636275" title="New York Botanical Garden">
