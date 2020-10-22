@@ -22,10 +22,12 @@ Ginevra de' Benci, a well-known young Florentine woman, is universally considere
 <param ve-map prefer-geojson center="Q2044" zoom="7" basemap="Stamen_TerrainBackground">
 
 The <span data-click-image-zoomto="6642,307,2220,3721">juniper bush</span> that surrounds Ginevra's head and fills much of the background, serves more than mere decorative purposes. In <span data-click-image-zoomto="7183,6142,2259,3101">Renaissance Italy</span>, the juniper was regarded a symbol of female virtue, while the Italian word for juniper, ginepro, also makes a play on Ginevra's name.[^4] The imagery and text on the reverse of the panel further support the identification of this picture. The reverse is decorated with a juniper sprig encircled by a wreath of laurel and palm and is memorialized by the phrase Virtvtem Forma Decorat ("Virtue Adorns Beauty").
- <param ve-image iiif manifest="manifests/Ginevra_de_Benci-reverse.json">
+ <param ve-image 
+        manifest="/manifests/Ginevra_de_Benci-reverse.json"
+        region="pct:40,40,20,20">
 
 The Latin motto Virtvtem Forma Decorat on the reverse of the portrait, is understood as symbolizing the intricate relationship between Ginevra's intellectual and moral virtue on the one hand, and her physical beauty on the other. The sprig of juniper, encircled by laurel and palm, suggests her name. The laurel and palm are in the personal emblem of Bernardo Bembo, a Venetian ambassador to Florence whose platonic relationship with Ginevra is revealed in poems exchanged between them. Infrared examination has revealed Bembo's motto "Virtue and Honor" beneath Ginevra's, making it likely that Bembo was somehow involved in the commission of the portrait.
- <param ve-image iiif manifest="manifests/Ginevra_de_Benci-reverse.json">
+ <param ve-image iiif manifest="/manifests/Ginevra_de_Benci-reverse.json">
 
 The portrait is one of the highlights of the National Gallery of Art, and is admired by many for its portrayal of Ginevra's temperament. Ginevra is beautiful, but austere; she has no hint of a smile and her gaze, although forward, seems indifferent to the viewer.[^5]
 
