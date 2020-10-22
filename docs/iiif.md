@@ -39,6 +39,15 @@ This paragraph provide an example of using external manifest in a visual essay. 
 Here's another example using an external IIF manifest.  This manifest URL was found on the Wellcome Library website. 
 <param ve-image manifest="https://wellcomelibrary.org/iiif/b18035723/manifest?manifest=https://wellcomelibrary.org/iiif/b18035723/manifest">
 
+
+## Single image from manifest
+
+Manifests can often include may individual images.  In this example we use a specific image using the `seq` attribute.
+<param ve-image 
+       manifest="https://iiif.lib.harvard.edu/manifests/drs:459932907"
+       seq="143"
+       rotate="90">
+
 ## References
 
 [^1]: "Ginevra de' Benci". National Gallery of Art. D.C. Retrieved 16 November 2014.

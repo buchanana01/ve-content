@@ -13,6 +13,18 @@
        icon="fa-map-marker-alt"
        label="Maps">
 
+## Using external GeoJSON map layer 
+
+One or more external GeoJSON files can be used as map layers.  Each file
+is specified in a separate `ve-map-layer` tag with a `url` attribute containing the location of the file.  In this example markers are displayed for the 100 largest cities in the world based on population data obtained from Wikidata.
+<param ve-map 
+       marker-type="circle"
+       radius="4" 
+       stroke-width="0"
+       fill="blue" 
+       fill-opacity="1">
+<param ve-map-layer url="/geojson/cities.json">
+
 ## Introduction
 
 This sample essay provides examples showing how maps can be incorporated into an essay.  Various features are used in the examples.
@@ -57,7 +69,7 @@ used for Rome on the map instead of a marker.
 One or more external GeoJSON files can be used as map layers.  Each file
 is specified in a separate `ve-map-layer` tag with a `url` attribute containing the location of the file.  In this example markers are displayed for the 100 largest cities in the world based on population data obtained from Wikidata.
 <param ve-map>
-<param ve-map-layer url="/geojson/cities.json">
+<param ve-map-layer url="/geojson/cities.json" marker-type="circle" radius="8">
 
 ## Using external GeoJSON map layer with time dimension 
 
@@ -93,8 +105,8 @@ For GeoJSON data that is time tagged a time dimension extension is available for
        center="39.833333, -98.583333"
        zoom="4"
        time-dimension
-       time-interval="-008000/"
-       duration="P10000Y"
+       time-interval="1780/"
+       duration="P500Y"
        basemap="Esri_WorldGrayCanvas"
        max-zoom="4"
        date-format="YYYY"
