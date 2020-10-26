@@ -32,8 +32,15 @@ Example essay demonstrating a number of visual essay features.
 A visual essay using IIIF image annotations.
 
 ##
-[Maps sampler](/maps-sample)
+[Maps sampler](/maps-sampler)
 
 ![](https://dev.visual-essays.app/thumbnail?url=https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/WorldMap-A_with_Frame.png/1024px-WorldMap-A_with_Frame.png)
 
 Examples of different uses of maps in a visual essay.
+
+##
+[Ginevra de Benci](/iiif)
+
+![](https://dev.visual-essays.app/thumbnail?url=https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Ginevra_de%27_Benci_-_National_Gallery_of_Art.jpg/465px-Ginevra_de%27_Benci_-_National_Gallery_of_Art.jpg)
+
+IIIF usage examples using the Da Vinci painting of Ginevra de Benci.

@@ -1,5 +1,8 @@
 {
   "type": "FeatureCollection",
+  "properties": {
+    "label": "Top cities by population"
+  },
   "features": [
     {
       "type": "Feature",

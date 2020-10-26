@@ -6,7 +6,7 @@
        title="Ginevra de' Benci" 
        author="Leonardo da Vinci">
 
-# IIIF examples
+# IIIF usage examples
 
 ## Ginevra de' Benci
  
