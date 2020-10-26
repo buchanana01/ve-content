@@ -39,7 +39,7 @@ A visual essay using IIIF image annotations.
 Examples of different uses of maps in a visual essay.
 
 ##
-[Ginevra de Benci](/iiif)
+[Ginevra de Benci](/ginevra-de-benci)
 
 ![](https://dev.visual-essays.app/thumbnail?url=https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Ginevra_de%27_Benci_-_National_Gallery_of_Art.jpg/465px-Ginevra_de%27_Benci_-_National_Gallery_of_Art.jpg)
 
