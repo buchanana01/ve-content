@@ -17,16 +17,14 @@
 <param title="Washington, D. C." eid="Q61" fill="green" marker-symbol="landmark">
 
 Cherry blossoms have formed an integral part of the identity of Washington, D. C., ever since Japan gifted over three thousand cherry trees to the United States in 1912 as a symbol of friendship and political alliance. Until the final decades of the 19th century, Japanese cherry trees had often been misunderstood among Westerners, and garnered only modest attention in Europe. Subsequent European involvement in East Asia forced Japan, which had pursued a strict isolationist policy for centuries, to open its borders.  As a result, Europeans enjoyed greater contact with Japanese culture, and a growing interest in cherry blossoms. With the planting of Japan’s gift of cherry trees in the <span eid="Q956781">Tidal Basin</span>, cherry blossoms became accessible to the American public, entering Western consciousness on an unprecedented scale. 
-<param ve-vis-network file="/data/heliconia.tsv">
-
-Cherry blossoms have formed an integral part of the identity of Washington, D. C., ever since Japan gifted over three thousand cherry trees to the United States in 1912 as a symbol of friendship and political alliance. Until the final decades of the 19th century, Japanese cherry trees had often been misunderstood among Westerners, and garnered only modest attention in Europe. Subsequent European involvement in East Asia forced Japan, which had pursued a strict isolationist policy for centuries, to open its borders.  As a result, Europeans enjoyed greater contact with Japanese culture, and a growing interest in cherry blossoms. With the planting of Japan’s gift of cherry trees in the <span eid="Q956781">Tidal Basin</span>, cherry blossoms became accessible to the American public, entering Western consciousness on an unprecedented scale.
-<param ve-image iiif
-       primary
+<param ve-image
        title="Tidal basin cherry blossom"
        url="https://upload.wikimedia.org/wikipedia/commons/2/2a/Tidal_basin_cherry_blossom_closeup.JPG"
-       fit="cover"
        attribution="Wikimedia Commons">
-<param ve-map center="Q61" zoom="12" prefer-geojson hide-labels>
+
+Cherry blossoms have formed an integral part of the identity of Washington, D. C., ever since Japan gifted over three thousand cherry trees to the United States in 1912 as a symbol of friendship and political alliance. Until the final decades of the 19th century, Japanese cherry trees had often been misunderstood among Westerners, and garnered only modest attention in Europe. Subsequent European involvement in East Asia forced Japan, which had pursued a strict isolationist policy for centuries, to open its borders.  As a result, Europeans enjoyed greater contact with Japanese culture, and a growing interest in cherry blossoms. With the planting of Japan’s gift of cherry trees in the <span eid="Q956781">Tidal Basin</span>, cherry blossoms became accessible to the American public, entering Western consciousness on an unprecedented scale.
+
+<param ve-map center="Q61" zoom="12" prefer-geojson>
 
 ## Cherry Trees in Japan
 
@@ -42,12 +40,11 @@ Flower-viewing or hanami is a centuries-old practice in Japan. Flower viewing st
 ## Cherries in the West
 
 Before the craze for Japanese cherries in the West at the start of the twentieth century, Europeans knew little of Japanese cherry blossoms, and Westerners who visited Japan often complained of how flowering Japanese cherry trees bore no fruit. As shipping techniques improved in the early 19th century, Japanese cherries began to trickle into European gardens in 1832, but remained unfashionable until the 1870s. When Japan opened its borders, greater contact with Japanese culture fueled interest in cherry blossoms among Westerners. By the 1890’s, Japan was marketing and exporting cherry trees to the West. However, cherries did not reach wide audiences in the West until Japan gave thousands of cherry trees to the United States in the early 20th century.  According to the World Atlas[^wa] the top 5 cherry producing countries in 2017 were Turkey, the United States, Iran, Spain, and Italy.
-<param ve-map prefer-geojson center="41,-45" zoom="2.5" hide-labels>
 <param title="United States" eid="Q30">
 <param title="Turkey" eid="Q43">
 <param title="Spain" eid="Q29">
 <param title="Italy" eid="Q38">
-<param title="Iran" eid="Q794">
+<param title="Iran" eid="Q794"><param ve-map prefer-geojson center="41,-45" zoom="2.5" hide-labels>
 
 ### Cherries in D.C.
 
@@ -96,6 +93,4 @@ The National Cherry Festival[^ncf] is a festival in Traverse City, Michigan. It 
 [^cpm]: [en.wikipedia.org/wiki/Cherry_production_in_Michigan](https://en.wikipedia.org/wiki/Cherry_production_in_Michigan)
 [^ncf]: [en.wikipedia.org/wiki/National_Cherry_Festival](https://en.wikipedia.org/wiki/National_Cherry_Festival)
 [^wa]: [Cherry production by country according to the World Atlas](https://www.worldatlas.com/articles/the-world-leaders-in-cherry-production.html)
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDgyNjY4NDddfQ==
--->
+
