@@ -8,6 +8,7 @@
 D3.js is a JavaScript library for producing dynamic, interactive data visualizations in web browsers. Documentation is available at [https://d3js.org/](https://d3js.org/).
 
 # Basic Force Directed Graph network
+This is a basic network graphed using the D3.js library. The `ve-d3-network` tag is used to generate this diagram and it takes a `url` attribute for the input data file. The example shown here uses a TSV file that can be viewed here [https://jstor-labs.github.io/ve-components/public/data/medici.tsv](https://jstor-labs.github.io/ve-components/public/data/medici.tsv).
 <param ve-d3-network url="https://jstor-labs.github.io/ve-components/public/data/medici.tsv">
 
 # D3Plus Networks
@@ -16,7 +17,7 @@ D3plus is a JavaScript re-usable chart library that extends the popular D3.js to
 
 ## Simple network
 
-This is an example of basic network diagram using the D3Plus library.  The data used used in this diagram is defined in a TSV (tab separated values) file that can be seen at [https://github.com/JSTOR-Labs/plant-humanities/blob/master/graphs/medici.tsv](https://github.com/JSTOR-Labs/plant-humanities/blob/master/graphs/medici.tsv).  The `ve-d3plus-network` tag is used to generate this diagram and takes a `url` attribute for the input data file.
+This is an example of basic network diagram using the D3Plus library.  The data used in this diagram is defined in a TSV (tab separated values) file that can be seen at [https://github.com/JSTOR-Labs/plant-humanities/blob/master/graphs/medici.tsv](https://github.com/JSTOR-Labs/plant-humanities/blob/master/graphs/medici.tsv).  The `ve-d3plus-network` tag is used to generate this diagram and takes a `url` attribute for the input data file.
 <param ve-d3plus-network url="https://jstor-labs.github.io/ve-components/public/data/medici.tsv">
 
 ## Ring network
@@ -34,4 +35,4 @@ Vis.js is a dynamic, browser based visualization JavaScript library. The library
 ## Simple network
 
 The `ve-vis-network` tag is used to generate this graph and identifies the data file with a `file` attribute. An optional `title` attribute can be defined to give the network graph a title. 
-<param ve-vis-network title="_Heliconia imbricata_ and hummingbird mutualistic interactions" file="https://jstor-labs.github.io/plant-humanities/graphs/heliconia-v3.tsv">
+<param ve-vis-network title="Heliconia imbricata and hummingbird mutualistic interactions" file="https://jstor-labs.github.io/plant-humanities/graphs/heliconia-v3.tsv">
