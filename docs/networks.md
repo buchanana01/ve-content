@@ -32,7 +32,7 @@ Rings are a way to view network connections focused on 1 node in the network.  t
 
 Vis.js is a dynamic, browser based visualization JavaScript library. The library is designed to be easy to use, to handle large amounts of dynamic data, and to enable manipulation of and interaction with the data. Examples of network graphs created in Vis.js can be seen at [https://visjs.github.io/vis-network/examples/](https://visjs.github.io/vis-network/examples/). The documentation for networks can be viewed at [https://visjs.github.io/vis-network/docs/network/](https://visjs.github.io/vis-network/docs/network/).
 
-## Simple network
+## Simple Vis.js network
 
-The `ve-vis-network` tag is used to generate this graph and identifies the data file with a `file` attribute. An optional `title` attribute can be defined to give the network graph a title. 
+The `ve-vis-network` tag is used to generate this graph and identifies the data file with a `file` attribute. An optional `title` attribute can be defined to give the network graph a title. The data file used in this example can be viewed at [https://jstor-labs.github.io/plant-humanities/graphs/heliconia-v3.tsv](https://jstor-labs.github.io/plant-humanities/graphs/heliconia-v3.tsv).
 <param ve-vis-network title="Heliconia imbricata and hummingbird mutualistic interactions" file="https://jstor-labs.github.io/plant-humanities/graphs/heliconia-v3.tsv">
