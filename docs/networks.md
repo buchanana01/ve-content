@@ -4,6 +4,12 @@
        layout="vertical"
        author="JSTOR Labs team">
 
+# D3.js Networks
+D3.js is a JavaScript library for producing dynamic, interactive data visualizations in web browsers. Documentation is available at [https://d3js.org/](https://d3js.org/).
+
+# Basic Force Directed Graph network
+<param ve-d3-network url="https://jstor-labs.github.io/ve-components/public/data/medici.tsv">
+
 # D3Plus Networks
 
 D3plus is a JavaScript re-usable chart library that extends the popular D3.js to enable the easy creation of beautiful visualizations.  Example diagrams can be seen at [https://d3plus.org/examples/](https://d3plus.org/examples/).  Documentation is available at [https://d3plus.org/docs/](https://d3plus.org/docs/).
@@ -19,3 +25,13 @@ Rings are a way to view network connections focused on 1 node in the network.  t
 <param ve-d3plus-ring-network 
        url="https://jstor-labs.github.io/ve-components/public/data/medici.tsv"
        center="Anna Maria Luisa de' Medici">
+
+
+# Vis.js Networks
+
+Vis.js is a dynamic, browser based visualization JavaScript library. The library is designed to be easy to use, to handle large amounts of dynamic data, and to enable manipulation of and interaction with the data. Examples of network graphs created in Vis.js can be seen at [https://visjs.github.io/vis-network/examples/](https://visjs.github.io/vis-network/examples/). The documentation for networks can be viewed at [https://visjs.github.io/vis-network/docs/network/](https://visjs.github.io/vis-network/docs/network/).
+
+## Simple network
+
+The `ve-vis-network` tag is used to generate this graph and identifies the data file with a `file` attribute. An optional `title` attribute can be defined to give the network graph a title. 
+<param ve-vis-network title="_Heliconia imbricata_ and hummingbird mutualistic interactions" file="https://jstor-labs.github.io/plant-humanities/graphs/heliconia-v3.tsv">
