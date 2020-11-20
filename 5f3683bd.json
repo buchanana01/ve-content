@@ -1,0 +1,34 @@
+{
+  "@context": "http://www.w3.org/ns/anno.jsonld",
+  "id": "http://visual-essays.app/annotations/?include=description&target=jstor-labs/ve-content/develop/ginevra-de-benci/5f3683bd",
+  "type": "AnnotationPage",
+  "partOf": {
+    "id": "http://visual-essays.app/annotations/?include=description&target=jstor-labs/ve-content/develop/ginevra-de-benci/5f3683bd",
+    "total": 1,
+    "modified": "2020-11-20T13:07:01.680943"
+  },
+  "startIndex": 0,
+  "items": [
+    {
+      "type": "Annotation",
+      "body": [
+        {
+          "type": "TextualBody",
+          "value": "test",
+          "purpose": "commenting"
+        }
+      ],
+      "target": {
+        "selector": {
+          "type": "FragmentSelector",
+          "conformsTo": "http://www.w3.org/TR/media-frags/",
+          "value": "xywh=pixel:6427.29248046875,6939.4990234375,1966.31298828125,1335.892578125"
+        },
+        "id": "jstor-labs/ve-content/develop/ginevra-de-benci/5f3683bd"
+      },
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "id": "jstor-labs/ve-content/develop/ginevra-de-benci/5f3683bd/805a42fe",
+      "seq": 0
+    }
+  ]
+}
