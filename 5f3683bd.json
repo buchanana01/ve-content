@@ -5,30 +5,30 @@
   "partOf": {
     "id": "http://visual-essays.app/annotations/?include=description&target=jstor-labs/ve-content/develop/ginevra-de-benci/5f3683bd",
     "total": 1,
-    "modified": "2020-11-20T13:17:39.828420"
+    "modified": "2020-11-20T13:19:44.911721"
   },
   "startIndex": 0,
   "items": [
     {
-      "type": "Annotation",
+      "@context": "http://www.w3.org/ns/anno.jsonld",
       "body": [
         {
+          "purpose": "commenting",
           "type": "TextualBody",
-          "value": "test",
-          "purpose": "commenting"
+          "value": "test updated 1"
         }
       ],
-      "target": {
-        "selector": {
-          "type": "FragmentSelector",
-          "conformsTo": "http://www.w3.org/TR/media-frags/",
-          "value": "xywh=pixel:6427.29248046875,6939.4990234375,1966.31298828125,1335.892578125"
-        },
-        "id": "jstor-labs/ve-content/develop/ginevra-de-benci/5f3683bd"
-      },
-      "@context": "http://www.w3.org/ns/anno.jsonld",
       "id": "jstor-labs/ve-content/develop/ginevra-de-benci/5f3683bd/805a42fe",
-      "seq": 0
+      "seq": 0,
+      "target": {
+        "id": "jstor-labs/ve-content/develop/ginevra-de-benci/5f3683bd",
+        "selector": {
+          "conformsTo": "http://www.w3.org/TR/media-frags/",
+          "type": "FragmentSelector",
+          "value": "xywh=pixel:6427.29248046875,6939.4990234375,1966.31298828125,1335.892578125"
+        }
+      },
+      "type": "Annotation"
     }
   ]
 }
