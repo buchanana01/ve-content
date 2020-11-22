@@ -312,7 +312,9 @@ new Promise(function(resolve, reject) {
                       const pathElems = parsedUrl.pathname.split('/').filter(pathElem => pathElem !== '')
                       const offset = knownSites.indexOf(context.site) >= 0
                         ? 4
-                        : this.context.browserRoot.split('/').length
+                        : context.site.indexOf('github.io') > 0
+                          ? 6
+                          : this.context.browserRoot.split('/').length
                       console.log(offset, pathElems)
                       target = `/${pathElems.slice(offset).join('/')}`
                       // console.log(pathElems, this.context.mdRoot, target)
