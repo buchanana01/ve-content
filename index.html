@@ -310,13 +310,17 @@ new Promise(function(resolve, reject) {
                     const parsedUrl = parseUrl(link.href)
                     if (parsedUrl.hash === '' ) {
                       const pathElems = parsedUrl.pathname.split('/').filter(pathElem => pathElem !== '')
-                      const offset = knownSites.indexOf(context.site) >= 0
-                        ? 4
-                        : context.site.indexOf('github.io') > 0
-                          ? 6
-                          : this.context.browserRoot.split('/').length
                       console.log(offset, pathElems)
-                      target = `/${pathElems.slice(offset).join('/')}`
+
+                      if (context.site.indexOf('github.io') > 0) {
+                        target = `/${pathElems[2]}/${pathElems.slice(4).join('/')}`
+                      } else {
+                        const offset =  knownSites.indexOf(context.site) >= 0
+                          ? offset = 4
+                          : this.context.browserRoot.split('/').length
+                        target = `/${pathElems.slice(offset).join('/')}`
+                      }
+
                       // console.log(pathElems, this.context.mdRoot, target)
                     } else {
                       target = parsedUrl.hash.split('?')[0]
