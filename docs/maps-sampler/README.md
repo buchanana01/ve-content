@@ -1,4 +1,4 @@
-<a href="https://dev.visual-essays.app/jstor-labs/ve-content/maps-sampler"><img src="https://jstor-labs.github.io/visual-essays/images/ve-button.png"></a>
+<a href="https://dev.visual-essays.app"><img src="https://visual-essays.netlify.app/images/ve-button.png"></a>
 
 <param ve-config
        title="Map sampler"
