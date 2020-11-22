@@ -14,7 +14,7 @@
 <param ve-entity title="Ginevra de' Benci" eid="Q3494135">
 <param ve-entity title="Leonardo da Vinci" eid="Q762">
 
-<param ve-image iiif primary manifest="/manifests/Ginevra_de_Benci-iiifhosting.json">
+<param ve-image iiif primary manifest="Ginevra_de_Benci-iiifhosting.json">
  
  <span eid="Q1267893">Ginevra de' Benci</span> is a portrait painting by Leonardo da Vinci of the 15th-century Florentine aristocrat <span eid="Q3494135">Ginevra de' Benci</span> (born c.  1458).[^1] The oil-on-wood portrait was acquired by the National Gallery of Art in Washington, D.C. in 1967. The sum of US$5 million—an absolute record price at the time—came from the Ailsa Mellon Bruce Fund and was paid to the Princely Family of Liechtenstein. It is the only painting by Leonardo on public view in the Americas.[^2]
 
@@ -22,13 +22,13 @@ Ginevra de' Benci, a well-known young Florentine woman, is universally considere
 <param ve-map prefer-geojson center="Q2044" zoom="7" basemap="Stamen_TerrainBackground">
 
 The <span data-click-image-zoomto="6642,307,2220,3721">juniper bush</span> that surrounds Ginevra's head and fills much of the background, serves more than mere decorative purposes. In <span data-click-image-zoomto="7183,6142,2259,3101">Renaissance Italy</span>, the juniper was regarded a symbol of female virtue, while the Italian word for juniper, ginepro, also makes a play on Ginevra's name.[^4] The imagery and text on the reverse of the panel further support the identification of this picture. The reverse is decorated with a juniper sprig encircled by a wreath of laurel and palm and is memorialized by the phrase Virtvtem Forma Decorat ("Virtue Adorns Beauty").
- <param ve-image manifest="/manifests/Ginerva_de_Benci-reverse.json">
+ <param ve-image manifest="Ginerva_de_Benci-reverse.json">
 
 The Latin motto Virtvtem Forma Decorat on the reverse of the portrait, is understood as symbolizing the intricate relationship between Ginevra's intellectual and moral virtue on the one hand, and her physical beauty on the other. The sprig of juniper, encircled by laurel and palm, suggests her name. The laurel and palm are in the personal emblem of Bernardo Bembo, a Venetian ambassador to Florence whose platonic relationship with Ginevra is revealed in poems exchanged between them. Infrared examination has revealed Bembo's motto "Virtue and Honor" beneath Ginevra's, making it likely that Bembo was somehow involved in the commission of the portrait.
- <param ve-image iiif manifest="/manifests/Ginerva_de_Benci-reverse.json">
+ <param ve-image iiif manifest="Ginerva_de_Benci-reverse.json">
 
 The portrait is one of the highlights of the National Gallery of Art, and is admired by many for its portrayal of Ginevra's temperament. Ginevra is beautiful, but austere; she has no hint of a smile and her gaze, although forward, seems indifferent to the viewer.[^5]
-<param ve-image manifest="/manifests/Ginevra_de_Benci-iiifhosting.json" region="pct:40,40,20,20">
+<param ve-image manifest="Ginevra_de_Benci-iiifhosting.json" region="pct:40,40,20,20">
 
 At some point, the bottom of the painting was removed, presumably owing to damage, and Ginevra's arms and hands are thought to have been lost.[^6] Using the golden section, Susan Dorothea White has drawn [an interpretation](http://www.susandwhite.com.au/enlarge.php?workID=162) of how her arms and hands may have been positioned in the original.[^7] The adaptation is based on drawings of hands by Leonardo thought to be studies for this painting.
 
