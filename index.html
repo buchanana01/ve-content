@@ -313,7 +313,8 @@ new Promise(function(resolve, reject) {
                       console.log(pathElems)
 
                       if (context.site.indexOf('github.io') > 0) {
-                        target = `/${pathElems[2]}/${pathElems.slice(4).join('/')}`
+                        // target = `/${pathElems[2]}/${pathElems.slice(4).join('/')}`
+                        target = `/${pathElems.slice(4).join('/')}`
                       } else {
                         const offset =  knownSites.indexOf(context.site) >= 0
                           ? 4
