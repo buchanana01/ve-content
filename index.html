@@ -219,7 +219,7 @@ new Promise(function(resolve, reject) {
                     const parsedUrl = parseUrl(link.href)
                     if (parsedUrl.hash === '' ) {
                       const pathElems = parsedUrl.pathname.split('/').filter(pathElem => pathElem !== '')
-                      target = context.isKnownSite
+                      target = context.isKnownSite || context.ghPagesSite
                         ? `/${pathElems.slice(4).join('/')}`
                         : `/${pathElems.slice(this.context.browserRoot.split('/').length).join('/')}`
                     } else {
