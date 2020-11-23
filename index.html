@@ -44,38 +44,28 @@
       /* transition: opacity 0.5s linear; */
       /* transition: visibility 0s 1s, opacity 1s linear; */
     }
-  </style>    
-    <!-- Start Single Page Apps for GitHub Pages -->
+  </style>   
+
+    <!-- Used for deep linking of Single Page Apps when hosted with GitHub Pages -->
     <script type="text/javascript">
       // Single Page Apps for GitHub Pages
       // https://github.com/rafrex/spa-github-pages
       // Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
-      // ----------------------------------------------------------------------
-      // This script checks to see if a redirect is present in the query string
-      // and converts it back into the correct url and adds it to the
-      // browser's history using window.history.replaceState(...),
-      // which won't cause the browser to attempt to load the new url.
-      // When the single page app is loaded further down in this file,
-      // the correct url will be waiting in the browser's history for
-      // the single page app to route accordingly.
       (function(l) {
         if (l.search) {
-          var q = {};
+          let q = {}
           l.search.slice(1).split('&').forEach(function(v) {
-            var a = v.split('=');
-            q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
-          });
+            let a = v.split('=')
+            q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&')
+          })
           if (q.p !== undefined) {
-            window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + (q.p || '') +
-              (q.q ? ('?' + q.q) : '') +
-              l.hash
-            );
+            window.history.replaceState(null, null, l.pathname.slice(0, -1) + (q.p || '') + (q.q ? ('?' + q.q) : '') + l.hash)
           }
         }
       }(window.location))
     </script>
     <!-- End Single Page Apps for GitHub Pages -->
+
 </head>
 <body>
   <div id="app">
@@ -85,19 +75,16 @@
         :height="400"
         :essay-config="essayConfig"
         :site-config="context"
-        :progress="progress"
         :is-authenticated="isAuthenticated"
+        :href="href"
         @menu-item-clicked="menuItemClicked"
         @logout="logout"
-        @toggle-option="toggleOption"
         @view-markdown="viewMarkdown"
         @edit-markdown="editMarkdown"
-        :href="href"
       ></component>
     </div>
 
-    <div id="content" v-html="html" class="content hidden">
-    </div>
+    <div id="content" v-html="html" class="content hidden"></div>
 
     <div class="footer">
       <component is="siteFooter"></component>
@@ -108,8 +95,6 @@
   <script>window.context = null</script>
   <script src="https://visual-essays.netlify.app/visual-essays.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.2/build/highlight.min.js"></script>
   <script src="https://kit.fontawesome.com/19541ddce8.js" crossorigin="anonymous"></script>
 
 <script>
@@ -135,40 +120,20 @@ new Promise(function(resolve, reject) {
       console.log('context', context)
       window.app = new Vue({
         el: '#app',
-        // store,
-        // vuetify: new Vuetify(),
         components: {
           'indexHeader': httpVueLoader(context.components.indexHeader && context.components.indexHeader.src),
           'essayHeader': httpVueLoader(context.components.essayHeader && context.components.essayHeader.src),
-          'siteFooter': httpVueLoader(context.components.siteFooter && context.components.siteFooter.src),
-          'markdownViewer': httpVueLoader(`https://JSTOR-Labs.github.io/visual-essays/components/MarkdownViewer.vue`)
-        },
+          'siteFooter': httpVueLoader(context.components.siteFooter && context.components.siteFooter.src)        },
         data: () => ({
           context,
-          nav: [
-            /*
-            { path: '/', title: 'Home', icon: 'mdi-home', enabled: true },
-            { path: '/about', title: 'About', icon: 'mdi-information', enabled: false },
-            { path: '/contact', title: 'Contact', icon: 'mdi-contact-mail', enabled: false },
-            { path: '/help', title: 'Help', icon: 'mdi-help-circle', enabled: false },
-            { path: '/resources', title: 'Resources', icon: 'mdi-library', enabled: false }
-            */
-          ],
-          height: 0,
-          width: 0,
-          headerHeight: 400,
-          footerHeight: undefined,
           html: undefined,
           isLoaded: false,
           essayConfig: null,
           essayCache: {},
-          progress: 0,
           appVersion: '0.7.0',
           libVersion: undefined,
           current: undefined,
-          markdownViewer: undefined,
-          markdown: undefined,
-          ctr: 0,
+          externalWindow: undefined,
           jwt: context.jwt,
           href: undefined
         }),
@@ -176,66 +141,18 @@ new Promise(function(resolve, reject) {
           isAuthenticated() { return this.jwt !== undefined }
         },
         mounted() {
-          this.height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
-          this.width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
-          /*
-          if (!this.context.isTouchDevice) {
-            new ResizeObserver(entries => {
-              entries.forEach(e => { this.height = e.contentRect.height; this.width = e.contentRect.width })
-            }).observe(document.getElementById('content'))
-          }
-          */
           window.onpopstate = (e) => { this.loadEssay(e.state.file, true) }
           this.loadEssay(this.context.path)
-          // Find and preload navigation pages
-          this.nav.filter(navItem => !navItem.enabled)
-          .forEach(navItem => {
-            //this.cachingFetch(navItem.path)
-            //.then(html => { if (html) {this.nav.map(item => item.enabled = item.enabled || item.path == navItem.path)} })
-          })
-        },
-        updated() {
-          this.sync()
         },
         methods: {
-          sync() {
-            if (window.vm) {
-              if (this.headerHeight !== undefined && this.headerHeight !== window.vm.$store.getters.headerHeight) {
-                window.vm.$store.dispatch('setHeaderHeight', this.headerHeight)
-              }
-              if (this.footerHeight !== undefined && this.footerHeight !== window.vm.$store.getters.footerHeight) {
-                window.vm.$store.dispatch('setFooterHeight', this.footerHeight)
-              }
-            }
-          },
-          logout() {
-            this.jwt = undefined
-          },
-          setHeaderHeight(height) {
-            this.headerHeight = height
-            this.sync()
-          },
-          setFooterHeight(height) {
-            this.footerHeight = height
-            this.sync()
-          },
-          menuItemClicked(path) {
-            if (path !== this.current) this.loadEssay(path)
-          },
-          toggleOption(option) {
-            if (option === 'layout') this.$store.dispatch('setLayout', this.$store.getters.layout[0] === 'h' ? 'vertical' : 'horizontal')
-            if (option === 'viewerIsOpen') this.$store.dispatch('setViewerIsOpen', !this.$store.getters.viewerIsOpen)
-            //if (option === 'header') this.headerEnabled = !this.headerEnabled
-            //if (option === 'footer') this.footerEnabled = !this.footerEnabled
-          },
+          logout() { this.jwt = undefined },
+          menuItemClicked(path) { if (path !== this.current) this.loadEssay(path) },
           async fetchRetry (url, retries=3, backoff=300, lastError=null) {
-            console.log(`fetchRetry: url=${url} retries=${retries}`)
             const retryCodes = [408, 500, 502, 503, 504, 522, 524]
             const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
             if (retries === 0 ) throw new Error(lastError)
             try {
               const resp = await fetch(url)
-              console.log(`status=${resp.status}`)
               if (retryCodes.includes(resp.status)) throw new Error(resp)
               return resp
             } catch (e) {
@@ -250,22 +167,18 @@ new Promise(function(resolve, reject) {
             } else {
               url = `${this.context.service}/essay/${this.context.acct}/${this.context.repo}/${this.context.branch}${path}${raw ? '&raw' : ''}`
             }
-            console.log(url)
-            // console.log(`cachingFetch: contentBranch=${this.context.branch} service=${this.context.service} acct=${this.context.acct} repo=${this.context.repo} ghBase=${this.context.ghBase} path=${path} url=${url} cached=${this.essayCache[url] !== undefined}`)
             if (!this.essayCache[url]) {
+              console.log(`fetch=${url}`)
               this.essayCache[url] = this.fetchRetry(url).then(resp => resp.ok ? resp.text() : null)
             }
             return this.essayCache[url]
           },
           loadEssay(path, replace, retries) {
-            // console.log(`loadEssay: path=${path} current=${this.current}`)
             this.cachingFetch(path)
             .then(html => {
               browserPath = path === '/help'
                 ? '/help'
                 : `${this.context.browserRoot}${path.replace(/\.md$/, '')}`
-
-              // console.log(`loadEssay: contentBranch=${this.context.branch} acct=${this.context.acct} repo=${this.context.repo} path=${path} browserPath=${browserPath} replace=${replace}`)
               if (replace) {
                 history.replaceState({file: path || ''}, '', browserPath)
               } else {
@@ -274,12 +187,10 @@ new Promise(function(resolve, reject) {
               this.href = window.location.href
               this.html = html
               this.current = path
-              // console.log('loadEssay', window.location, this.current)              
               document.getElementById('content').classList.remove('visible')
               document.getElementById('content').classList.add('hidden')
               this.$nextTick(() => {
                 const essayElem = document.getElementById('essay')
-                console.log(essayElem)
                 if (essayElem) window._essay = essayElem.dataset.name
               })
             })
@@ -288,41 +199,30 @@ new Promise(function(resolve, reject) {
             const url = this.context.path === '/help' && hostname !== 'localhost'
               ? `https://${this.context.branch.codeBranch === 'develop' ? 'dev.' : ''}visual-essays.app/essay/jstor-labs/ve-content/help?raw&root=/docs&branch=${this.context.branch}`
               : `${this.context.service}/markdown-viewer/${this.context.acct}/${this.context.repo}${this.context.path}?branch=${this.context.branch}&root=${this.context.mdRoot}`
-            if (this.markdownViewer) { this.markdownViewer.close() }
+            if (this.externalWindow) { this.externalWindow.close() }
             this.markdownViewer = window.open(url, '_blank', `toolbar=yes,location=yes,left=0,top=0,width=1000,height=1200,scrollbars=yes,status=yes`)
           },
           editMarkdown(editor) {
             const url = editor == 'stackedit'
               ? `https://stackedit.io/app#providerId=githubWorkspace&owner=${this.context.acct}&repo=${this.context.repo}&branch=${this.context.branch}`
               : `https://${this.context.branch.codeBranch === 'develop' ? 'dev.' : ''}editor.visual-essays.app${this.context.mdRoot}${this.context.path === '/' ? window._essay : this.current}.md`
-            if (this.markdownViewer) { this.markdownViewer.close() }
-            this.markdownViewer = window.open(url, '_blank', `toolbar=yes,location=yes,left=0,top=0,width=1400,height=1200,scrollbars=yes,status=yes`)
+            if (this.externalWindow) { this.externalWindow.close() }
+            this.externalWindow = window.open(url, '_blank', `toolbar=yes,location=yes,left=0,top=0,width=1400,height=1200,scrollbars=yes,status=yes`)
           },
           convertLinks() {
-            // convert embedded essay links
+            // convert essay links
             const essayElem = document.getElementById('essay')
             if (essayElem) {
               essayElem.querySelectorAll('a').forEach(link => {
-                // console.log(link.href)
                 if (!link.href || link.href.indexOf(this.context.service) === 0 || link.href.indexOf('/help#') > 0 ) {
                   let target = link.dataset.target
                   if (!target) { 
                     const parsedUrl = parseUrl(link.href)
                     if (parsedUrl.hash === '' ) {
                       const pathElems = parsedUrl.pathname.split('/').filter(pathElem => pathElem !== '')
-                      console.log(pathElems)
-
-                      if (context.site.indexOf('github.io') > 0) {
-                        // target = `/${pathElems[2]}/${pathElems.slice(4).join('/')}`
-                        target = `/${pathElems.slice(4).join('/')}`
-                      } else {
-                        const offset =  knownSites.indexOf(context.site) >= 0
-                          ? 4
-                          : this.context.browserRoot.split('/').length
-                        target = `/${pathElems.slice(offset).join('/')}`
-                      }
-
-                      // console.log(pathElems, this.context.mdRoot, target)
+                      target = context.ghPagesSite || knownSites.indexOf(context.site) >= 0
+                        ? `/${pathElems.slice(4).join('/')}`
+                        : `/${pathElems.slice(this.context.browserRoot.split('/').length).join('/')}`
                     } else {
                       target = parsedUrl.hash.split('?')[0]
                     }
@@ -349,25 +249,16 @@ new Promise(function(resolve, reject) {
               this.convertLinks()
               document.getElementById('content').classList.add('visible')
               document.getElementById('content').classList.remove('hidden')
-              //document.title = this.essayConfig.title || ''
             } else {
               setTimeout(this.waitForEssayReady, 10)
             }
           }
         },
         watch: {
-          layout() {
-            // console.log(`main.layout=${this.layout}`)
-          },
           isLoaded() {    
-            // console.log(`isLoaded=${this.isLoaded}`, this.essayConfig)
             if (this.isLoaded) {
               this.isLoaded = false
-              this.$nextTick(() => {
-                // const scrollableContent = document.getElementById('scrollableContent')
-                // if (scrollableContent) scrollableContent.scrollTo(0, 0)
-                this.waitForEssayReady()
-              })
+              this.$nextTick(() => this.waitForEssayReady())
             }
           }
         }
