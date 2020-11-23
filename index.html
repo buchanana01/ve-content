@@ -77,6 +77,8 @@
         :site-config="context"
         :is-authenticated="isAuthenticated"
         :href="href"
+        :appVersion="appVersion"
+        :libVersion="libVersion"
         @menu-item-clicked="menuItemClicked"
         @logout="logout"
         @view-markdown="viewMarkdown"
@@ -87,7 +89,7 @@
     <div id="content" v-html="html" class="content hidden"></div>
 
     <div class="footer">
-      <component is="siteFooter"></component>
+      <component is="siteFooter" :site-config="context"></component>
     </div>
   
   </div>
@@ -98,13 +100,6 @@
   <script src="https://kit.fontawesome.com/19541ddce8.js" crossorigin="anonymous"></script>
 
 <script>
-
-const knownSites = [
-  'localhost',
-  'visual-essays.app', 'dev.visual-essays.app',
-  'plant-humanities.app', 'dev.plant-humanities.app',
-  'kent-maps.online', 'dev.kent-maps.online'
-]
 
 new Promise(function(resolve, reject) {
   function waitForContext() {
@@ -130,7 +125,7 @@ new Promise(function(resolve, reject) {
           isLoaded: false,
           essayConfig: null,
           essayCache: {},
-          appVersion: '0.7.0',
+          appVersion: '0.8.0',
           libVersion: undefined,
           current: undefined,
           externalWindow: undefined,
@@ -145,8 +140,12 @@ new Promise(function(resolve, reject) {
           this.loadEssay(this.context.path)
         },
         methods: {
-          logout() { this.jwt = undefined },
-          menuItemClicked(path) { if (path !== this.current) this.loadEssay(path) },
+          logout() {
+            this.jwt = undefined
+          },
+          menuItemClicked(path) {
+            if (path !== this.current) this.loadEssay(path)
+          },
           async fetchRetry (url, retries=3, backoff=300, lastError=null) {
             const retryCodes = [408, 500, 502, 503, 504, 522, 524]
             const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
@@ -167,8 +166,8 @@ new Promise(function(resolve, reject) {
             } else {
               url = `${this.context.service}/essay/${this.context.acct}/${this.context.repo}/${this.context.branch}${path}${raw ? '&raw' : ''}`
             }
+            console.log(`fetch=${url}`)
             if (!this.essayCache[url]) {
-              console.log(`fetch=${url}`)
               this.essayCache[url] = this.fetchRetry(url).then(resp => resp.ok ? resp.text() : null)
             }
             return this.essayCache[url]
@@ -210,7 +209,7 @@ new Promise(function(resolve, reject) {
             this.externalWindow = window.open(url, '_blank', `toolbar=yes,location=yes,left=0,top=0,width=1400,height=1200,scrollbars=yes,status=yes`)
           },
           convertLinks() {
-            // convert essay links
+            // convert links
             const essayElem = document.getElementById('essay')
             if (essayElem) {
               essayElem.querySelectorAll('a').forEach(link => {
@@ -220,7 +219,7 @@ new Promise(function(resolve, reject) {
                     const parsedUrl = parseUrl(link.href)
                     if (parsedUrl.hash === '' ) {
                       const pathElems = parsedUrl.pathname.split('/').filter(pathElem => pathElem !== '')
-                      target = context.ghPagesSite || knownSites.indexOf(context.site) >= 0
+                      target = context.isKnownSite
                         ? `/${pathElems.slice(4).join('/')}`
                         : `/${pathElems.slice(this.context.browserRoot.split('/').length).join('/')}`
                     } else {
