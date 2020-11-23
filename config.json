@@ -1,7 +1,7 @@
 {
     "title": "Visual Essays",
     "banner": "/images/header.jpg",
-    "bannerHeight": 400,
+    "logo": "https://jstor-labs.github.io/visual-essays/images/labs.jpg",
     "mdRoot": "/docs",
     "nav": [
         {"label": "Home", "icon": "home-alt", "path": "/"},
