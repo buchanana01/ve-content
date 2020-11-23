@@ -4,8 +4,8 @@
   "type": "AnnotationPage",
   "partOf": {
     "id": "http://visual-essays.app/annotations/?include=description&target=docs/ginevra-de-benci/README/6c021b0a",
-    "total": 3,
-    "modified": "2020-11-23T21:23:12.863790"
+    "total": 2,
+    "modified": "2020-11-23T21:31:04.888379"
   },
   "startIndex": 0,
   "items": [
@@ -29,27 +29,6 @@
       "@context": "http://www.w3.org/ns/anno.jsonld",
       "id": "docs/ginevra-de-benci/README/6c021b0a/f5e620db",
       "seq": 1
-    },
-    {
-      "type": "Annotation",
-      "body": [
-        {
-          "type": "TextualBody",
-          "value": "Left eye",
-          "purpose": "commenting"
-        }
-      ],
-      "target": {
-        "selector": {
-          "type": "FragmentSelector",
-          "conformsTo": "http://www.w3.org/TR/media-frags/",
-          "value": "xywh=pixel:3708.365478515625,3408.302490234375,975.040283203125,581.123779296875"
-        },
-        "id": "docs/ginevra-de-benci/README/6c021b0a"
-      },
-      "@context": "http://www.w3.org/ns/anno.jsonld",
-      "id": "docs/ginevra-de-benci/README/6c021b0a/fbb1875b",
-      "seq": 2
     },
     {
       "type": "Annotation",
