@@ -8,5 +8,5 @@
         {"label": "About", "icon": "info", "path": "/about"},
         {"label": "Help", "icon": "question", "path": "/help"}
     ],
-    "publishedVersion": "v0.2"
+    "publishedVersion": "0.1"
 }
