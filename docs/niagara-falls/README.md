@@ -1,3 +1,5 @@
+<a href="https://visual-essays.app"><img src="images/ve-button.png"></a>
+
 <param ve-config 
        banner="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/American_Falls_Niagara_Falls_USA_from_Skylon_Tower_on_2002-05-28.png/1024px-American_Falls_Niagara_Falls_USA_from_Skylon_Tower_on_2002-05-28.png" 
        title="Niagara Falls"
