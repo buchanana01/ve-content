@@ -9,15 +9,15 @@
 
 Erosion control efforts have always been of extreme importance. Underwater weirs redirect the most damaging currents, and the top of the falls has also been strengthened. In June 1969, the Niagara River was completely diverted from the American Falls for several months through construction of a temporary rock and earth dam. During this time, two bodies were removed from under the falls, including a man who had been seen jumping over the falls, and the body of a woman, which was discovered once the falls dried.
 <param ve-image
-       description="Dewatered American Falls (1969)"
-       attribution="James St. John"
-       license="https://creativecommons.org/licenses/by/2.0/deed.en"
-       url="https://upload.wikimedia.org/wikipedia/commons/0/0b/Dewatered_American_Falls_%281969%29_%28Niagara_Falls%2C_northwest_of_Buffalo%2C_New_York_State%2C_USA%29_%2819936707609%29.jpg">
-<param ve-image
        description="American Falls = wide waterfalls at center & left Bridal Veil Falls = narrow waterfalls at above right-of-center"
        attribution="James St. John"
        license="https://creativecommons.org/licenses/by/2.0/deed.en"
        url="https://upload.wikimedia.org/wikipedia/commons/a/a2/American_Falls_%28Niagara_Falls%2C_northwest_of_Buffalo%2C_New_York_State%2C_USA%29_1_%2820116899192%29.jpg">
+<param ve-image
+       description="Dewatered American Falls (1969)"
+       attribution="James St. John"
+       license="https://creativecommons.org/licenses/by/2.0/deed.en"
+       url="https://upload.wikimedia.org/wikipedia/commons/0/0b/Dewatered_American_Falls_%281969%29_%28Niagara_Falls%2C_northwest_of_Buffalo%2C_New_York_State%2C_USA%29_%2819936707609%29.jpg">
 
 While the Horseshoe Falls absorbed the extra flow, the U.S. Army Corps of Engineers studied the riverbed and mechanically bolted and strengthened any faults they found; faults that would, if left untreated, have hastened the retreat of the American Falls. A plan to remove the huge mound of talus deposited in 1954 was abandoned owing to cost, and in November 1969, the temporary dam was dynamited, restoring flow to the American Falls. Even after these undertakings, Luna Island, the small piece of land between the main waterfall and the Bridal Veil, remained off limits to the public for years owing to fears that it was unstable and could collapse into the gorge.
 <param ve-image layers
