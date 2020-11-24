@@ -7,5 +7,6 @@
         {"label": "Home", "icon": "home-alt", "path": "/"},
         {"label": "About", "icon": "info", "path": "/about"},
         {"label": "Help", "icon": "question", "path": "/help"}
-    ]
+    ],
+    "publishedVersion": "v0.2"
 }
