@@ -5,7 +5,7 @@
   "partOf": {
     "id": "http://visual-essays.app/annotations/?include=description&target=docs/maps-sampler/README/21fec760",
     "total": 1,
-    "modified": "2020-11-30T23:55:37.900738"
+    "modified": "2020-11-30T23:56:30.615910"
   },
   "startIndex": 0,
   "items": [
@@ -14,7 +14,7 @@
       "body": [
         {
           "type": "TextualBody",
-          "value": "test",
+          "value": "test again",
           "purpose": "commenting"
         }
       ],
@@ -24,7 +24,7 @@
           "conformsTo": "http://www.w3.org/TR/media-frags/",
           "value": "xywh=pixel:311.7428283691406,1038.675048828125,1056.8335876464844,708.1875"
         },
-        "id": "docs/maps-sampler/README/21fec760"
+        "id": "jstor-labs/ve-content/develop/docs/maps-sampler/README/21fec760"
       },
       "@context": "http://www.w3.org/ns/anno.jsonld",
       "id": "docs/maps-sampler/README/21fec760/d60272e2",
