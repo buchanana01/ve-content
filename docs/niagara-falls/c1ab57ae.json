@@ -1,0 +1,34 @@
+{
+  "@context": "http://www.w3.org/ns/anno.jsonld",
+  "id": "http://visual-essays.app/annotations/?include=description&target=docs/niagara-falls/README/c1ab57ae",
+  "type": "AnnotationPage",
+  "partOf": {
+    "id": "http://visual-essays.app/annotations/?include=description&target=docs/niagara-falls/README/c1ab57ae",
+    "total": 1,
+    "modified": "2020-11-24T15:27:55.815615"
+  },
+  "startIndex": 0,
+  "items": [
+    {
+      "type": "Annotation",
+      "body": [
+        {
+          "type": "TextualBody",
+          "value": "Point",
+          "purpose": "commenting"
+        }
+      ],
+      "target": {
+        "selector": {
+          "type": "FragmentSelector",
+          "conformsTo": "http://www.w3.org/TR/media-frags/",
+          "value": "xywh=pixel:1084.0416259765625,743.1201782226562,691.743896484375,371.40606689453125"
+        },
+        "id": "docs/niagara-falls/README/c1ab57ae"
+      },
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "id": "docs/niagara-falls/README/c1ab57ae/eabf30bf",
+      "seq": 0
+    }
+  ]
+}
