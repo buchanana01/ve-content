@@ -7,7 +7,7 @@
 
 # Niagara Falls
 
-Erosion control efforts have always been of extreme importance. Underwater weirs redirect the most damaging currents, and the top of the falls has also been strengthened. In June 1969, the Niagara River was completely diverted from the American Falls for several months through construction of a temporary rock and earth dam. During this time, two bodies were removed from under the falls, including a man who had been seen jumping over the falls, and the body of a woman, which was discovered once the falls dried.
+Erosion control efforts have always been of extreme importance. Underwater weirs redirect the most damaging currents, and the top of the falls has also been strengthened. In June 1969, the <span data-mouseover-image-zoomto="eabf30bf">Niagara River</span> was completely diverted from the American Falls for several months through construction of a temporary rock and earth dam. During this time, two bodies were removed from under the falls, including a man who had been seen jumping over the falls, and the body of a woman, which was discovered once the falls dried.
 <param ve-image
        description="American Falls = wide waterfalls at center & left Bridal Veil Falls = narrow waterfalls at above right-of-center"
        attribution="James St. John"

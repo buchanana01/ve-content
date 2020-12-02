@@ -6,7 +6,8 @@
     "nav": [
         {"label": "Home", "icon": "home-alt", "path": "/"},
         {"label": "About", "icon": "info", "path": "/about"},
-        {"label": "Help", "icon": "question", "path": "/help"}
+        {"label": "Documentation", "icon": "question"},
+        {"label": "Login", "icon": "user"}
     ],
-    "publishedVersion": "v0.2"
+    "publishedVersion": "0.1"
 }
