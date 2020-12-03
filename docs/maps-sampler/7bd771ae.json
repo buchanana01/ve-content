@@ -1,11 +1,11 @@
 {
   "@context": "http://www.w3.org/ns/anno.jsonld",
-  "id": "http://visual-essays.app/annotations/?include=description&target=docs/ginevra-de-benci/README/6c021b0a",
+  "id": "http://visual-essays.app/annotations/?include=description&target=docs/maps-sampler/README/7bd771ae",
   "type": "AnnotationPage",
   "partOf": {
-    "id": "http://visual-essays.app/annotations/?include=description&target=docs/ginevra-de-benci/README/6c021b0a",
+    "id": "http://visual-essays.app/annotations/?include=description&target=docs/maps-sampler/README/7bd771ae",
     "total": 1,
-    "modified": "2020-12-01T01:44:58.094701"
+    "modified": "2020-11-30T23:37:39.528577"
   },
   "startIndex": 0,
   "items": [
@@ -14,7 +14,7 @@
       "body": [
         {
           "type": "TextualBody",
-          "value": "curls",
+          "value": "test",
           "purpose": "commenting"
         }
       ],
@@ -22,12 +22,12 @@
         "selector": {
           "type": "FragmentSelector",
           "conformsTo": "http://www.w3.org/TR/media-frags/",
-          "value": "xywh=pixel:3195.764404296875,5138.375,1121.682861328125,1185.77880859375"
+          "value": "xywh=pixel:1230.5706787109375,1332.84521484375,722.7144775390625,439.439453125"
         },
-        "id": "docs/ginevra-de-benci/README/6c021b0a"
+        "id": "docs/maps-sampler/README/7bd771ae"
       },
       "@context": "http://www.w3.org/ns/anno.jsonld",
-      "id": "docs/ginevra-de-benci/README/6c021b0a/78eb734d",
+      "id": "docs/maps-sampler/README/7bd771ae/84f8d4b7",
       "seq": 0
     }
   ]
