@@ -8,6 +8,5 @@
         {"label": "About", "icon": "info", "path": "/about"},
         {"label": "Documentation", "icon": "question"},
         {"label": "Login", "icon": "user"}
-    ],
-    "publishedVersion": "0.1"
+    ]
 }
