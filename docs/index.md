@@ -32,7 +32,7 @@ Example essay demonstrating a number of visual essay features.
 A visual essay using IIIF image annotations.
 
 ##
-[Maps sampler](/maps-sampler)
+[Maps sampler](maps-sampler)
 
 ![](https://dev.visual-essays.app/thumbnail?url=https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/WorldMap-A_with_Frame.png/1024px-WorldMap-A_with_Frame.png)
 
