@@ -4,7 +4,7 @@
     "logo": "/images/labs.jpg",
     "mdRoot": "/docs",
     "nav": [
-        {"label": "Home", "icon": "home-alt", "path": "/jstor-labs/ve-content"},
+        {"label": "Home", "icon": "home-alt", "path": "/jstor-labs/ve-content/docs"},
         {"label": "About", "icon": "info", "path": "/about"},
         {"label": "Documentation", "icon": "question"},
         {"label": "Login", "icon": "user"}
